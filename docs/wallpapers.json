@@ -1,0 +1,761 @@
+[
+  {
+    "title": "IOS 27",
+    "brand": "apple",
+    "date": "June 8, 2026",
+    "images": [
+      "ios27/1.jpg",
+      "ios27/2.jpg",
+      "ios27/3.png",
+      "ios27/4.jpg",
+      "ios27/5.png",
+      "ios27/6.png"
+    ]
+  },
+  {
+    "title": "WWDC 26",
+    "date": "June 8, 2026",
+    "brand": "apple",
+    "images": [
+      "wwdc26/1.png"
+    ]
+  },
+  {
+    "title": "Huavei Pura X MAX",
+    "brand": "huawei",
+    "date": "April 20, 2026",
+    "images": [
+      "huaweipuraxmax/1.jpg",
+      "huaweipuraxmax/2.jpg",
+      "huaweipuraxmax/3.jpg",
+      "huaweipuraxmax/4.jpg",
+      "huaweipuraxmax/5.jpg",
+      "huaweipuraxmax/6.jpg",
+      "huaweipuraxmax/7.jpg",
+      "huaweipuraxmax/8.jpg",
+      "huaweipuraxmax/9.jpg",
+      "huaweipuraxmax/10.jpg",
+      "huaweipuraxmax/11.jpg",
+      "huaweipuraxmax/12.jpg",
+      "huaweipuraxmax/13.jpg",
+      "huaweipuraxmax/14.jpg",
+      "huaweipuraxmax/15.jpg",
+      "huaweipuraxmax/16.jpg"
+    ]
+  },
+  {
+    "title": "Huavei Pura 90 PRO",
+    "brand": "huawei",
+    "date": "April 20, 2026",
+    "images": [
+      "huaweipura90pro/1.jpg",
+      "huaweipura90pro/2.jpg",
+      "huaweipura90pro/3.jpg",
+      "huaweipura90pro/4.jpg",
+      "huaweipura90pro/5.jpg",
+      "huaweipura90pro/6.jpg",
+      "huaweipura90pro/7.jpg",
+      "huaweipura90pro/8.jpg",
+      "huaweipura90pro/9.jpg",
+      "huaweipura90pro/10.jpg",
+      "huaweipura90pro/11.jpg",
+      "huaweipura90pro/12.jpg"
+    ]
+  },
+  {
+    "title": "iPhone 17e",
+    "brand": "apple",
+    "date": "March 2, 2026",
+    "images": [
+      "iphone17e/1.png",
+      "iphone17e/2.png",
+      "iphone17e/3.png"
+    ]
+  },
+  {
+    "title": "Samsung Galaxy S26 ULTRA",
+    "brand": "samsung",
+    "date": "February 25, 2026",
+    "images": [
+      "galaxys26ultra/1.png",
+      "galaxys26ultra/2.png",
+      "galaxys26ultra/3.png",
+      "galaxys26ultra/4.png",
+      "galaxys26ultra/5.png",
+      "galaxys26ultra/6.png"
+    ]
+  },
+  {
+    "title": "Oppo Find X9 Ultra",
+    "brand": "oppo",
+    "date": "January 8, 2026",
+    "images": [
+      "oppofindx9ultra/1.png",
+      "oppofindx9ultra/2.png"
+    ]
+  },
+    {
+    "title": "Xiaomi 17 ULTRA",
+    "brand": "xiaomi",
+    "date": "December 25, 2025",
+    "images": [
+      "xiaomi17ultra/1.jpg",
+      "xiaomi17ultra/2.jpg",
+      "xiaomi17ultra/3.jpg",
+      "xiaomi17ultra/4.jpg"
+    ]
+  },
+  {
+    "title": "Vivo X300s",
+    "brand": "vivo",
+    "date": "November 10, 2025",
+    "images": [
+      "vivox300s/1.png",
+      "vivox300s/2.png",
+      "vivox300s/3.png"
+    ]
+  },
+  {
+    "title": "Redmi K90 PRO MAX",
+    "brand": "xiaomi",
+    "date": "October 23, 2025",
+    "images": [
+      "redmik90promax/1.jpg",
+      "redmik90promax/2.jpg",
+      "redmik90promax/3.jpg",
+      "redmik90promax/4.jpg",
+      "redmik90promax/5.jpg"
+    ]
+  },
+  {
+    "title": "Vivo X300 PRO",
+    "brand": "vivo",
+    "date": "October 13, 2025",
+    "images": [
+      "vivox300pro/1.png",
+      "vivox300pro/2.png",
+      "vivox300pro/3.png"
+    ]
+  },
+  {
+    "title": "Vivo X300",
+    "brand": "vivo",
+    "date": "October 13, 2025",
+    "images": [
+      "vivox300/1.png",
+      "vivox300/2.png",
+      "vivox300/3.png",
+      "vivox300/4.png",
+      "vivox300/5.png"
+    ]
+  },
+  {
+    "title": "Xiaomi 17",
+    "brand": "xiaomi",
+    "date": "September 25, 2025",
+    "images": [
+      "xiaomi17/1.jpg",
+      "xiaomi17/2.png",
+      "xiaomi17/3.png",
+      "xiaomi17/4.png",
+      "xiaomi17/5.png",
+      "xiaomi17/6.png"
+    ]
+  },
+  {
+    "title": "Oppo F31 Pro",
+    "brand": "oppo",
+    "date": "September 15, 2025",
+    "images": [
+      "oppof31pro/1.png",
+      "oppof31pro/2.png",
+      "oppof31pro/3.png",
+      "oppof31pro/4.png",
+      "oppof31pro/5.png"
+    ]
+  },
+  {
+    "title": "iPhone 17 PRO / 17 PRO MAX",
+    "brand": "apple",
+    "date": "September 9, 2025",
+    "images": [
+      "iphone17pro/1.png",
+      "iphone17pro/2.png",
+      "iphone17pro/3.png"
+    ]
+  },
+  {
+    "title": "iPhone Air",
+    "brand": "apple",
+    "date": "September 9, 2025",
+    "images": [
+      "iphoneair/1.jpg",
+      "iphoneair/2.jpg",
+      "iphoneair/3.jpg",
+      "iphoneair/4.jpg"
+    ],
+    "previews": [
+      "iphoneair/2.jpg",
+      "iphoneair/3.jpg",
+      "iphoneair/4.jpg"
+    ]
+  },
+  {
+    "title": "iPhone 17",
+    "brand": "apple",
+    "date": "September 9, 2025",
+    "images": [
+      "iphone17/1.jpg",
+      "iphone17/2.jpg",
+      "iphone17/3.jpg",
+      "iphone17/4.jpg",
+      "iphone17/5.jpg"
+    ],
+    "previews": [
+      "iphone17/4.jpg",
+      "iphone17/1.jpg",
+      "iphone17/3.jpg"
+    ]
+  },
+  {
+    "title": "Vivo Y400",
+    "brand": "vivo",
+    "date": "August 4, 2025",
+    "images": [
+      "vivoy400/1.jpg",
+      "vivoy400/2.jpg",
+      "vivoy400/3.jpg",
+      "vivoy400/4.jpg",
+      "vivoy400/5.jpg"
+    ]
+  },
+  {
+    "title": "Samsung Galaxy Z Fold 7",
+    "brand": "samsung",
+    "date": "July 9, 2025",
+    "images": [
+      "galaxyzfold7/1.png",
+      "galaxyzfold7/2.png",
+      "galaxyzfold7/3.png",
+      "galaxyzfold7/4.png"
+    ]
+  },
+  {
+    "title": "IOS 26",
+    "brand": "apple",
+    "date": "June 9, 2025",
+    "images": [
+      "ios26/1.jpg",
+      "ios26/2.jpeg",
+      "ios26/3.jpg",
+      "ios26/4.jpg",
+      "ios26/5.jpg",
+      "ios26/6.jpg",
+      "ios26/7.jpg",
+      "ios26/8.jpg"
+    ],
+    "previews": [
+      "ios26/1.jpg",
+      "ios26/2.jpeg",
+      "ios26/8.jpg"
+    ]
+  },
+  {
+    "title": "iPhone 16e",
+    "brand": "apple",
+    "date": "February 19, 2025",
+    "images": [
+      "iphone16e/1.png"
+    ]
+  },
+  {
+    "title": "Oppo A5 Pro",
+    "brand": "oppo",
+    "date": "December 20, 2024",
+    "images": [
+      "oppoa5pro/1.png",
+      "oppoa5pro/2.png",
+      "oppoa5pro/3.png",
+      "oppoa5pro/4.png"
+    ]
+  },
+  {
+    "title": "iPhone 16 PRO / 16 PRO MAX",
+    "brand": "apple",
+    "date": "September 9, 2024",
+    "images": [
+      "iphone16pro/1.jpg",
+      "iphone16pro/2.jpg",
+      "iphone16pro/3.jpg",
+      "iphone16pro/4.jpg"
+    ]
+  },
+  {
+    "title": "iPhone 16 / 16 Plus",
+    "brand": "apple",
+    "date": "September 9, 2024",
+    "images": [
+      "iphone16/1.jpg",
+      "iphone16/2.jpg",
+      "iphone16/3.jpeg",
+      "iphone16/4.jpg",
+      "iphone16/5.jpg"
+    ]
+  },
+  {
+    "title": "IOS 18",
+    "brand": "apple",
+    "date": "June 10, 2024",
+    "images": [
+      "ios18/1.png",
+      "ios18/2.png",
+      "ios18/3.png",
+      "ios18/4.png",
+      "ios18/5.png",
+      "ios18/6.png",
+      "ios18/7.png",
+      "ios18/8.png"
+    ]
+  },
+  {
+    "title": "realme 12 Pro+",
+    "brand": "realme",
+    "date": "January 29, 2024",
+    "images": [
+      "realme12proplus/1.png",
+      "realme12proplus/2.png",
+      "realme12proplus/3.png"
+    ]
+  },
+  {
+    "title": "Pixel 8",
+    "brand": "google",
+    "date": "October 4, 2023",
+    "images": [
+      "googlepixel8/1.jpeg",
+      "googlepixel8/2.jpeg",
+      "googlepixel8/3.jpeg",
+      "googlepixel8/4.jpeg",
+      "googlepixel8/5.jpeg",
+      "googlepixel8/6.jpeg",
+      "googlepixel8/7.jpeg",
+      "googlepixel8/8.jpeg",
+      "googlepixel8/9.jpeg",
+      "googlepixel8/10.jpeg",
+      "googlepixel8/11.jpeg",
+      "googlepixel8/12.jpeg",
+      "googlepixel8/13.jpeg",
+      "googlepixel8/14.jpeg",
+      "googlepixel8/15.jpeg",
+      "googlepixel8/16.jpeg"
+    ]
+  },
+  {
+    "title": "iPhone 15 PRO / 15 PRO MAX",
+    "brand": "apple",
+    "date": "September 12, 2023",
+    "images": [
+      "iphone15pro/1.png",
+      "iphone15pro/2.png",
+      "iphone15pro/3.png",
+      "iphone15pro/4.png"
+    ]
+  },
+  {
+    "title": "iPhone 15 / 15 Plus",
+    "brand": "apple",
+    "date": "September 12, 2023",
+    "images": [
+      "iphone15/1.jpg",
+      "iphone15/2.jpg",
+      "iphone15/3.jpg",
+      "iphone15/4.jpg",
+      "iphone15/5.jpg"
+    ]
+  },
+  {
+    "title": "IOS 17",
+    "brand": "apple",
+    "date": "June 5, 2023",
+    "images": [
+      "ios17/2.png",
+      "ios17/1.png"
+    ]
+  },
+  {
+    "title": "iPhone 14 PRO / 14 PRO MAX",
+    "brand": "apple",
+    "date": "September 7, 2022",
+    "images": [
+      "iphone14pro/1.jpeg",
+      "iphone14pro/2.jpeg",
+      "iphone14pro/3.jpeg",
+      "iphone14pro/4.jpeg"
+    ],
+    "previews": [
+      "iphone14pro/2.jpeg",
+      "iphone14pro/3.jpeg",
+      "iphone14pro/1.jpeg"
+    ]
+  },
+  {
+    "title": "iPhone 14 / 14 Plus",
+    "brand": "apple",
+    "date": "September 7, 2022",
+    "images": [
+      "iphone14/1.png",
+      "iphone14/2.png",
+      "iphone14/3.png",
+      "iphone14/4.png",
+      "iphone14/5.png",
+      "iphone14/6.jpg"
+    ]
+  },
+  {
+    "title": "IOS 16",
+    "brand": "apple",
+    "date": "June 6, 2022",
+    "images": [
+      "ios16/1.jpg"
+    ]
+  },
+  {
+    "title": "iPhone SE (3rd generation)",
+    "brand": "apple",
+    "date": "March 8, 2022",
+    "images": [
+      "iphonese3/1.heic",
+      "iphonese3/2.heic",
+      "iphonese3/3.heic",
+      "iphonese3/4.heic",
+      "iphonese3/5.heic",
+      "iphonese3/6.heic"
+    ]
+  },
+  {
+    "title": "iPhone 13 PRO / PRO MAX",
+    "brand": "apple",
+    "date": "September 14, 2021",
+    "images": [
+      "iphone13pro/1.heic",
+      "iphone13pro/2.heic",
+      "iphone13pro/3.heic",
+      "iphone13pro/4.heic",
+      "iphone13pro/5.heic",
+      "iphone13pro/6.heic",
+      "iphone13pro/7.heic",
+      "iphone13pro/8.heic",
+      "iphone13pro/9.png",
+      "iphone13pro/10.png"
+    ],
+    "previews": [
+      "iphone13pro/1.heic",
+      "iphone13pro/3.heic",
+      "iphone13pro/5.heic"
+    ]
+  },
+  {
+    "title": "iPhone 13 / 13 Mini",
+    "brand": "apple",
+    "date": "September 14, 2021",
+    "images": [
+      "iphone13/1.heic",
+      "iphone13/2.heic",
+      "iphone13/3.heic",
+      "iphone13/4.heic",
+      "iphone13/5.heic",
+      "iphone13/6.heic",
+      "iphone13/7.heic",
+      "iphone13/8.heic",
+      "iphone13/9.heic",
+      "iphone13/10.heic",
+      "iphone13/11.png",
+      "iphone13/12.png"
+    ]
+  },
+  {
+    "title": "IOS 15",
+    "brand": "apple",
+    "date": "June 7, 2021",
+    "images": [
+      "ios15/1.heic",
+      "ios15/2.heic",
+      "ios15/3.heic",
+      "ios15/4.heic"
+    ]
+  },
+  {
+    "title": "iPhone 12 PRO / 12 PRO MAX",
+    "brand": "apple",
+    "date": "October 13, 2020",
+    "images": [
+      "iphone12pro/1.heic.png",
+      "iphone12pro/2.heic.png",
+      "iphone12pro/3.heic.png",
+      "iphone12pro/4.heic.png",
+      "iphone12pro/5.heic.png",
+      "iphone12pro/6.heic.png",
+      "iphone12pro/7.heic.png",
+      "iphone12pro/8.heic.png"
+    ]
+  },
+  {
+    "title": "iPhone 12 / 12 Mini",
+    "brand": "apple",
+    "date": "October 13, 2020",
+    "images": [
+      "iphone12/1.jpg",
+      "iphone12/2.jpg",
+      "iphone12/3.jpg",
+      "iphone12/4.jpg",
+      "iphone12/5.jpg",
+      "iphone12/6.jpg",
+      "iphone12/7.jpg",
+      "iphone12/8.jpg",
+      "iphone12/9.jpg",
+      "iphone12/10.jpg",
+      "iphone12/11.heic",
+      "iphone12/12.heic"
+    ]
+  },
+  {
+    "title": "IOS 14",
+    "brand": "apple",
+    "date": "June 22, 2020",
+    "images": [
+      "ios14/1.heic",
+      "ios14/2.heic",
+      "ios14/3.heic",
+      "ios14/4.heic",
+      "ios14/5.heic",
+      "ios14/6.heic"
+    ]
+  },
+  {
+    "title": "iPhone 11 PRO / PRO MAX",
+    "brand": "apple",
+    "date": "September 10, 2019",
+    "images": [
+      "iphone11pro/1.png",
+      "iphone11pro/2.jpg",
+      "iphone11pro/3.png",
+      "iphone11pro/4.jpg",
+      "iphone11pro/5.png",
+      "iphone11pro/6.jpg",
+      "iphone11pro/7.png",
+      "iphone11pro/8.jpg"
+    ]
+  },
+  {
+    "title": "iPhone 11",
+    "brand": "apple",
+    "date": "September 10, 2019",
+    "images": [
+      "iphone11/1.jpg",
+      "iphone11/2.jpg",
+      "iphone11/3.jpg",
+      "iphone11/4.jpg",
+      "iphone11/5.jpg",
+      "iphone11/6.jpg",
+      "iphone11/7.jpg",
+      "iphone11/8.jpg",
+      "iphone11/9.jpg",
+      "iphone11/10.jpg",
+      "iphone11/11.jpg",
+      "iphone11/12.jpg"
+    ]
+  },
+  {
+    "title": "IOS 13",
+    "brand": "apple",
+    "date": "June 3, 2019",
+    "images": [
+      "ios13/1.jpeg",
+      "ios13/2.jpeg",
+      "ios13/3.jpeg",
+      "ios13/4.jpeg",
+      "ios13/5.jpeg",
+      "ios13/6.jpeg",
+      "ios13/7.jpeg",
+      "ios13/8.jpeg"
+    ]
+  },
+  {
+    "title": "iPhone XS / XS MAX",
+    "brand": "apple",
+    "date": "September 12, 2018",
+    "images": [
+      "iphonexs/1.jpg",
+      "iphonexs/2.jpg",
+      "iphonexs/3.jpg",
+      "iphonexs/4.jpg",
+      "iphonexs/5.jpg",
+      "iphonexs/6.jpg"
+    ]
+  },
+  {
+    "title": "iPhone XR",
+    "brand": "apple",
+    "date": "September 12, 2018",
+    "images": [
+      "iphonexr/1.jpg",
+      "iphonexr/2.jpg",
+      "iphonexr/3.jpg",
+      "iphonexr/4.jpg",
+      "iphonexr/5.jpg",
+      "iphonexr/6.jpg",
+      "iphonexr/7.jpg",
+      "iphonexr/8.jpg",
+      "iphonexr/9.jpg",
+      "iphonexr/10.jpg",
+      "iphonexr/11.jpg",
+      "iphonexr/12.jpg"
+    ]
+  },
+  {
+    "title": "IOS 12",
+    "brand": "apple",
+    "date": "June 4, 2018",
+    "images": [
+      "ios12/1.jpg"
+    ]
+  },
+  {
+    "title": "iPhone X",
+    "brand": "apple",
+    "date": "September 12, 2017",
+    "images": [
+      "iphonex/1.jpg",
+      "iphonex/2.jpg",
+      "iphonex/3.jpg",
+      "iphonex/4.jpg"
+    ]
+  },
+  {
+    "title": "iPhone 8 / 8 Plus",
+    "brand": "apple",
+    "date": "September 12, 2017",
+    "images": [
+      "iphone8/1.jpg",
+      "iphone8/2.jpg",
+      "iphone8/3.jpg"
+    ]
+  },
+    {
+    "title": "IOS 11",
+    "brand": "apple",
+    "date": "June 5, 2017",
+    "images": [
+      "ios11/1.jpeg",
+      "ios11/2.jpeg",
+      "ios11/3.jpeg",
+      "ios11/4.jpeg",
+      "ios11/5.jpeg"
+    ]
+  },
+    {
+    "title": "IOS 11 Flower",
+    "brand": "apple",
+    "date": "June 5, 2017",
+    "images": [
+      "ios11flower/1.jpeg",
+      "ios11flower/2.jpeg",
+      "ios11flower/3.jpeg",
+      "ios11flower/4.jpeg",
+      "ios11flower/5.jpeg",
+      "ios11flower/6.jpeg"
+    ]
+  },
+  {
+    "title": "IOS 11 Retro Rainbow",
+    "brand": "apple",
+    "date": "June 5, 2017",
+    "images": [
+      "ios11retro/1.jpeg",
+      "ios11retro/2.jpeg",
+      "ios11retro/3.jpeg",
+      "ios11retro/4.jpeg",
+      "ios11retro/5.jpeg",
+      "ios11retro/6.jpeg",
+      "ios11retro/7.jpeg"
+    ]
+  },
+  {
+    "title": "IOS 11 Space",
+    "brand": "apple",
+    "date": "June 5, 2017",
+    "images": [
+      "ios11space/1.png",
+      "ios11space/2.png",
+      "ios11space/3.png"
+    ]
+  },
+  {
+    "title": "Samsung Galaxy S8",
+    "brand": "samsung",
+    "date": "March 29, 2017",
+    "images": [
+      "galaxys8/1.jpg",
+      "galaxys8/2.jpg",
+      "galaxys8/3.jpg",
+      "galaxys8/4.jpg",
+      "galaxys8/5.jpg",
+      "galaxys8/6.jpg",
+      "galaxys8/7.jpg",
+      "galaxys8/8.png",
+      "galaxys8/9.png",
+      "galaxys8/10.png",
+      "galaxys8/11.jpg",
+      "galaxys8/12.jpg",
+      "galaxys8/13.jpg",
+      "galaxys8/14.jpg",
+      "galaxys8/15.jpg"
+    ],
+    "previews": [
+      "galaxys8/15.jpg",
+      "galaxys8/1.jpg",
+      "galaxys8/5.jpg"
+    ]
+  },
+  {
+    "title": "IOS 10",
+    "brand": "apple",
+    "date": "June 13, 2016",
+    "images": [
+      "ios10/1.png",
+      "ios10/2.png",
+      "ios10/3.png",
+      "ios10/4.png"
+    ]
+  },
+  {
+    "title": "IOS 9",
+    "brand": "apple",
+    "date": "June 8, 2015",
+    "images": [
+      "ios9/1.png",
+      "ios9/2.png",
+      "ios9/3.png",
+      "ios9/4.png",
+      "ios9/5.png",
+      "ios9/6.png",
+      "ios9/7.png",
+      "ios9/8.png",
+      "ios9/9.png",
+      "ios9/10.png",
+      "ios9/11.png",
+      "ios9/12.png",
+      "ios9/13.png",
+      "ios9/14.png",
+      "ios9/15.png"
+    ]
+  },
+  {
+    "title": "IOS 9 beta",
+    "brand": "apple",
+    "date": "June 8, 2015",
+    "images": [
+      "ios9beta/1.png"
+    ]
+  }
+]
