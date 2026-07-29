@@ -518,6 +518,49 @@ function appendModalItemsInBatches(item, images, grid, startIndex) {
   }
 }
 
+let modalHistoryPushed = false;
+
+function pushModalHistoryState() {
+  history.pushState({ archiveModalOpen: true }, '', location.href);
+  modalHistoryPushed = true;
+}
+
+function closeActiveModalUI() {
+  const wallpaperModal = document.getElementById('wallpaperModal');
+  const aboutModal = document.getElementById('aboutModal');
+  let closedSomething = false;
+
+  if (wallpaperModal.classList.contains('active')) {
+    wallpaperModal.classList.remove('active');
+    closedSomething = true;
+  }
+  if (aboutModal.classList.contains('active')) {
+    aboutModal.classList.remove('active');
+    closedSomething = true;
+  }
+
+  if (closedSomething) {
+    requestAnimationFrame(() => {
+      unlockBodyScroll();
+    });
+  }
+}
+
+function requestModalClose() {
+  if (modalHistoryPushed) {
+    history.back();
+  } else {
+    closeActiveModalUI();
+  }
+}
+
+window.addEventListener('popstate', () => {
+  if (modalHistoryPushed) {
+    modalHistoryPushed = false;
+    closeActiveModalUI();
+  }
+});
+
 function openModal(item) {
   const modal = document.getElementById('wallpaperModal');
   const modalTitleEl = document.getElementById('modalTitle');
@@ -531,6 +574,7 @@ function openModal(item) {
 
   appendModalItemsInBatches(item, item.images || [], modalGrid, 0);
 
+  pushModalHistoryState();
   lockBodyScroll();
   void modal.offsetHeight;
   requestAnimationFrame(() => {
@@ -539,15 +583,12 @@ function openModal(item) {
 }
 
 function closeModal(e) {
-  const modal = document.getElementById('wallpaperModal');
-  modal.classList.remove('active');
-  requestAnimationFrame(() => {
-    unlockBodyScroll();
-  });
+  requestModalClose();
 }
 
 function openAboutModal() {
   const modal = document.getElementById('aboutModal');
+  pushModalHistoryState();
   lockBodyScroll();
   void modal.offsetHeight;
   requestAnimationFrame(() => {
@@ -556,11 +597,7 @@ function openAboutModal() {
 }
 
 function closeAboutModal(e) {
-  const modal = document.getElementById('aboutModal');
-  modal.classList.remove('active');
-  requestAnimationFrame(() => {
-    unlockBodyScroll();
-  });
+  requestModalClose();
 }
 
 document.addEventListener("DOMContentLoaded", loadWallpaperData);
