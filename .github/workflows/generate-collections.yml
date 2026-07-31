@@ -1,0 +1,34 @@
+name: Generate collection pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/wallpapers.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate collection pages
+        run: node scripts/generate-collections.js
+
+      - name: Commit generated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/collections docs/sitemap.xml
+          git diff --staged --quiet || git commit -m "Auto-generate collection pages"
+          git push
