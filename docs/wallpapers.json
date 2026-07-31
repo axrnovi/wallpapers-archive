@@ -10,7 +10,8 @@
       "ios27/4.jpg",
       "ios27/5.png",
       "ios27/6.png"
-    ]
+    ],
+    "description": "iOS 27 was unveiled at Apple's Worldwide Developers Conference on June 8, 2026, as the successor to iOS 26. Its headline feature is Siri AI, a rebuilt version of Siri built on generative AI models capable of holding natural, back-and-forth conversations. The update reached the public in September 2026 alongside the new iPhone lineup."
   },
   {
     "title": "WWDC 26",
@@ -18,7 +19,8 @@
     "brand": "apple",
     "images": [
       "wwdc26/1.png"
-    ]
+    ],
+    "description": "WWDC 2026 was Apple's annual developer conference, kicking off on June 8, 2026 with the keynote where iOS 27, along with iPadOS 27, macOS Golden Gate, watchOS 27 and other platform updates were unveiled. It also marked Tim Cook's final keynote as Apple's CEO before handing the role to hardware engineering chief John Ternus."
   },
   {
     "title": "Huavei Pura X MAX",
@@ -41,7 +43,8 @@
       "huaweipuraxmax/14.jpg",
       "huaweipuraxmax/15.jpg",
       "huaweipuraxmax/16.jpg"
-    ]
+    ],
+    "description": "The Huawei Pura X is a foldable smartphone released March 20, 2025, using Huawei's vertical \"wide-folding\" hinge design. It packs a 6.3-inch inner display and a 3.5-inch outer OLED screen into a body 36% thinner than Huawei's earlier foldables."
   },
   {
     "title": "Huavei Pura 90 PRO",
@@ -60,7 +63,8 @@
       "huaweipura90pro/10.jpg",
       "huaweipura90pro/11.jpg",
       "huaweipura90pro/12.jpg"
-    ]
+    ],
+    "description": "The Huawei Pura 90 Pro launched in China on April 20, 2026, continuing the Pura series' signature triangular camera module in a new gradient finish. It's powered by the Kirin 9030S chip and features a 200-megapixel periscope telephoto lens."
   },
   {
     "title": "iPhone 17e",
@@ -70,7 +74,8 @@
       "iphone17e/1.png",
       "iphone17e/2.png",
       "iphone17e/3.png"
-    ]
+    ],
+    "description": "Announced March 2, 2026, and released March 11, the iPhone 17e is Apple's budget model, priced at $599. It upgrades on the iPhone 16e with the A19 chip, the faster C1X modem, and — for the first time in this lineup — MagSafe wireless charging."
   },
   {
     "title": "Samsung Galaxy S26 ULTRA",
@@ -83,7 +88,8 @@
       "galaxys26ultra/4.png",
       "galaxys26ultra/5.png",
       "galaxys26ultra/6.png"
-    ]
+    ],
+    "description": "The Galaxy S26 Ultra was announced at Samsung's Unpacked event in San Francisco on February 25, 2026, going on sale March 11. Its standout feature is a new Privacy Display that can dim the screen from side angles, keeping onlookers from seeing what's on it, alongside the Snapdragon 8 Elite Gen 5 chip."
   },
   {
     "title": "Oppo Find X9 Ultra",
@@ -92,9 +98,10 @@
     "images": [
       "oppofindx9ultra/1.png",
       "oppofindx9ultra/2.png"
-    ]
+    ],
+    "description": "The Oppo Find X9 Ultra launched April 21, 2026, in China and select global markets as one of the year's most camera-focused flagships. It packs a quad-camera system with a 200-megapixel main sensor and a 200-megapixel periscope telephoto lens, powered by the Snapdragon 8 Elite Gen 5."
   },
-    {
+  {
     "title": "Xiaomi 17 ULTRA",
     "brand": "xiaomi",
     "date": "December 25, 2025",
@@ -103,7 +110,8 @@
       "xiaomi17ultra/2.jpg",
       "xiaomi17ultra/3.jpg",
       "xiaomi17ultra/4.jpg"
-    ]
+    ],
+    "description": "The Xiaomi 17 Ultra debuted in China on December 25, 2025, before its global launch in Barcelona on February 28, 2026, just ahead of Mobile World Congress. Built with Leica, it features a 1-inch main camera sensor and a 200-megapixel periscope telephoto lens."
   },
   {
     "title": "Vivo X300s",
@@ -113,7 +121,8 @@
       "vivox300s/1.png",
       "vivox300s/2.png",
       "vivox300s/3.png"
-    ]
+    ],
+    "description": "The Vivo X300s launched in China on March 30, 2026, becoming the first phone in Vivo's X series with a 144Hz display. It also carries the largest battery yet in the lineup at 7,100mAh, alongside a 200-megapixel Zeiss-branded main camera."
   },
   {
     "title": "Redmi K90 PRO MAX",
@@ -125,7 +134,8 @@
       "redmik90promax/3.jpg",
       "redmik90promax/4.jpg",
       "redmik90promax/5.jpg"
-    ]
+    ],
+    "description": "Announced in October 2025 and released in China on October 23, the Redmi K90 Pro Max is the first \"Pro Max\" model in Redmi's K series. It pairs the Snapdragon 8 Elite Gen 5 chip with a periscope telephoto camera and a Bose-tuned loudspeaker."
   },
   {
     "title": "Vivo X300 PRO",
@@ -135,7 +145,8 @@
       "vivox300pro/1.png",
       "vivox300pro/2.png",
       "vivox300pro/3.png"
-    ]
+    ],
+    "description": "The Vivo X300 Pro was announced October 13 and released October 17, 2025, as the higher-end model in Vivo's X300 series. It runs on MediaTek's then-new Dimensity 9500 chip with a 6.78-inch LTPO OLED display reaching up to 4,500 nits of brightness."
   },
   {
     "title": "Vivo X300",
@@ -147,7 +158,8 @@
       "vivox300/3.png",
       "vivox300/4.png",
       "vivox300/5.png"
-    ]
+    ],
+    "description": "Launched alongside the Pro model on October 17, 2025, the standard Vivo X300 offers a more compact 6.31-inch display while sharing the same Dimensity 9500 chip as its bigger sibling."
   },
   {
     "title": "Xiaomi 17",
@@ -160,7 +172,8 @@
       "xiaomi17/4.png",
       "xiaomi17/5.png",
       "xiaomi17/6.png"
-    ]
+    ],
+    "description": "The standard Xiaomi 17 was unveiled in China on September 25, 2025, featuring a 6.3-inch flat OLED display and a large silicon-carbon battery rated at up to 7,000mAh. It reached global markets, including a Leica-branded camera system, in early 2026."
   },
   {
     "title": "Oppo F31 Pro",
@@ -172,7 +185,8 @@
       "oppof31pro/3.png",
       "oppof31pro/4.png",
       "oppof31pro/5.png"
-    ]
+    ],
+    "description": "Released in September 2025, the Oppo F31 Pro is a mid-range device built around a large 7,000mAh battery and the MediaTek Dimensity 7300 chip, aimed at buyers who prioritize battery life over flagship specs."
   },
   {
     "title": "iPhone 17 PRO / 17 PRO MAX",
@@ -182,7 +196,8 @@
       "iphone17pro/1.png",
       "iphone17pro/2.png",
       "iphone17pro/3.png"
-    ]
+    ],
+    "description": "The iPhone 17 Pro and Pro Max were unveiled at Apple's \"Awe Dropping\" event on September 9, 2025, alongside the standard iPhone 17 and the all-new iPhone Air. Pre-orders opened September 12, with devices arriving in stores on September 19, 2025."
   },
   {
     "title": "iPhone Air",
@@ -198,7 +213,8 @@
       "iphoneair/2.jpg",
       "iphoneair/3.jpg",
       "iphoneair/4.jpg"
-    ]
+    ],
+    "description": "Introduced on September 9, 2025, the iPhone Air marked a brand-new category in Apple's lineup: the thinnest iPhone ever made, at just 5.6mm. Apple achieved this by moving internal components closer to the rear camera and removing the physical SIM card slot, while still promising all-day battery life."
   },
   {
     "title": "iPhone 17",
@@ -215,7 +231,8 @@
       "iphone17/4.jpg",
       "iphone17/1.jpg",
       "iphone17/3.jpg"
-    ]
+    ],
+    "description": "The iPhone 17 launched on September 19, 2025, as Apple's standard flagship model, featuring a larger 6.3-inch display with ProMotion support and an A19 chip. It was priced the same as its predecessor, the iPhone 16, despite the display and performance upgrades."
   },
   {
     "title": "Vivo Y400",
@@ -227,7 +244,8 @@
       "vivoy400/3.jpg",
       "vivoy400/4.jpg",
       "vivoy400/5.jpg"
-    ]
+    ],
+    "description": "The Vivo Y400 5G launched in India on August 4, 2025, as a mid-range phone positioned in the sub-₹25,000 segment. It runs on the Snapdragon 4 Gen 2 chipset with a 6.67-inch AMOLED display and 120Hz refresh rate."
   },
   {
     "title": "Samsung Galaxy Z Fold 7",
@@ -238,7 +256,8 @@
       "galaxyzfold7/2.png",
       "galaxyzfold7/3.png",
       "galaxyzfold7/4.png"
-    ]
+    ],
+    "description": "Announced July 9, 2025, at Samsung's Unpacked event in Brooklyn and released July 25, the Galaxy Z Fold 7 became Samsung's thinnest and lightest book-style foldable to date. It was also the first Samsung foldable to feature a 200-megapixel main camera."
   },
   {
     "title": "IOS 26",
@@ -258,7 +277,8 @@
       "ios26/1.jpg",
       "ios26/2.jpeg",
       "ios26/8.jpg"
-    ]
+    ],
+    "description": "iOS 26 was announced at WWDC on June 9, 2025 and released to the public on September 15, 2025. It was the first iOS version to carry a year-based number instead of a sequential one, aligning it with macOS, watchOS and Apple's other platforms, and introduced the Liquid Glass design language."
   },
   {
     "title": "iPhone 16e",
@@ -266,7 +286,8 @@
     "date": "February 19, 2025",
     "images": [
       "iphone16e/1.png"
-    ]
+    ],
+    "description": "Announced February 19, 2025 and released February 28, the iPhone 16e replaced the iPhone SE line as Apple's budget model, starting at $599. It brought the A18 chip and an edge-to-edge display, though it launched without MagSafe support."
   },
   {
     "title": "Oppo A5 Pro",
@@ -277,7 +298,8 @@
       "oppoa5pro/2.png",
       "oppoa5pro/3.png",
       "oppoa5pro/4.png"
-    ]
+    ],
+    "description": "The Oppo A5 Pro launched internationally on February 25, 2025, as a budget-friendly model powered by the MediaTek Dimensity 6300 chip, with a 6.67-inch display and a starting price around €260."
   },
   {
     "title": "iPhone 16 PRO / 16 PRO MAX",
@@ -288,7 +310,8 @@
       "iphone16pro/2.jpg",
       "iphone16pro/3.jpg",
       "iphone16pro/4.jpg"
-    ]
+    ],
+    "description": "Unveiled at Apple's \"Glowtime\" event on September 9, 2024, the iPhone 16 Pro and Pro Max introduced the A18 Pro chip and a dedicated Camera Control button. They were the first iPhones built with Apple Intelligence in mind from the ground up."
   },
   {
     "title": "iPhone 16 / 16 Plus",
@@ -300,7 +323,8 @@
       "iphone16/3.jpeg",
       "iphone16/4.jpg",
       "iphone16/5.jpg"
-    ]
+    ],
+    "description": "Launched alongside the Pro models on September 9, 2024, the iPhone 16 and 16 Plus brought the Camera Control button and a redesigned vertical camera layout enabling spatial photos and video to the standard lineup."
   },
   {
     "title": "IOS 18",
@@ -315,7 +339,8 @@
       "ios18/6.png",
       "ios18/7.png",
       "ios18/8.png"
-    ]
+    ],
+    "description": "iOS 18 was announced at WWDC on June 10, 2024, and released September 16, 2024. It introduced Apple Intelligence, customizable Home Screen app icon colors, and a redesigned Control Center."
   },
   {
     "title": "realme 12 Pro+",
@@ -325,7 +350,8 @@
       "realme12proplus/1.png",
       "realme12proplus/2.png",
       "realme12proplus/3.png"
-    ]
+    ],
+    "description": "The realme 12 Pro+ was released January 29, 2024, positioned as a mid-range device with camera hardware that punched above its price class, part of realme's push to bring flagship-style photography features downmarket."
   },
   {
     "title": "Pixel 8",
@@ -348,7 +374,8 @@
       "googlepixel8/14.jpeg",
       "googlepixel8/15.jpeg",
       "googlepixel8/16.jpeg"
-    ]
+    ],
+    "description": "Google unveiled the Pixel 8 at its Made by Google event in New York on October 4, 2023, with sales beginning October 12. It was the first Pixel to launch with a promise of seven years of OS and security updates, powered by Google's Tensor G3 chip."
   },
   {
     "title": "iPhone 15 PRO / 15 PRO MAX",
@@ -359,7 +386,8 @@
       "iphone15pro/2.png",
       "iphone15pro/3.png",
       "iphone15pro/4.png"
-    ]
+    ],
+    "description": "Announced September 12, 2023, the iPhone 15 Pro and Pro Max switched to a titanium frame, replaced the mute switch with the Action Button, and debuted the A17 Pro, Apple's first 3-nanometer chip."
   },
   {
     "title": "iPhone 15 / 15 Plus",
@@ -371,7 +399,8 @@
       "iphone15/3.jpg",
       "iphone15/4.jpg",
       "iphone15/5.jpg"
-    ]
+    ],
+    "description": "Released alongside the Pro models on September 12, 2023, the iPhone 15 and 15 Plus were the first standard iPhones to switch from Lightning to USB-C and to bring the Dynamic Island to the non-Pro lineup."
   },
   {
     "title": "IOS 17",
@@ -380,7 +409,8 @@
     "images": [
       "ios17/2.png",
       "ios17/1.png"
-    ]
+    ],
+    "description": "Announced at WWDC on June 5, 2023, and released September 18, 2023, iOS 17 introduced StandBy mode for bedside displays, Live Voicemail, and redesigned Contact Posters for calls."
   },
   {
     "title": "iPhone 14 PRO / 14 PRO MAX",
@@ -396,7 +426,8 @@
       "iphone14pro/2.jpeg",
       "iphone14pro/3.jpeg",
       "iphone14pro/1.jpeg"
-    ]
+    ],
+    "description": "Unveiled September 7, 2022, the iPhone 14 Pro and Pro Max replaced the notch with the Dynamic Island, introduced an Always-On display, and upgraded to a 48-megapixel main camera."
   },
   {
     "title": "iPhone 14 / 14 Plus",
@@ -409,7 +440,8 @@
       "iphone14/4.png",
       "iphone14/5.png",
       "iphone14/6.jpg"
-    ]
+    ],
+    "description": "Launched September 7, 2022, the iPhone 14 and 14 Plus introduced Crash Detection and satellite-based Emergency SOS for areas without cellular coverage."
   },
   {
     "title": "IOS 16",
@@ -417,7 +449,8 @@
     "date": "June 6, 2022",
     "images": [
       "ios16/1.jpg"
-    ]
+    ],
+    "description": "Announced at WWDC on June 6, 2022, and released September 12, 2022, iOS 16 let users fully customize the Lock Screen with widgets and multiple styles for the first time."
   },
   {
     "title": "iPhone SE (3rd generation)",
@@ -430,7 +463,8 @@
       "iphonese3/4.heic",
       "iphonese3/5.heic",
       "iphonese3/6.heic"
-    ]
+    ],
+    "description": "Released March 18, 2022, the third-generation iPhone SE kept the classic iPhone 8 design but added 5G support and the A15 Bionic chip, the same chip found in the iPhone 13."
   },
   {
     "title": "iPhone 13 PRO / PRO MAX",
@@ -452,7 +486,8 @@
       "iphone13pro/1.heic",
       "iphone13pro/3.heic",
       "iphone13pro/5.heic"
-    ]
+    ],
+    "description": "Announced September 14, 2021, the iPhone 13 Pro and Pro Max brought a 120Hz ProMotion display to iPhone for the first time, along with a new Cinematic mode for video."
   },
   {
     "title": "iPhone 13 / 13 Mini",
@@ -471,7 +506,8 @@
       "iphone13/10.heic",
       "iphone13/11.png",
       "iphone13/12.png"
-    ]
+    ],
+    "description": "Launched alongside the Pro models on September 14, 2021, the iPhone 13 and 13 Mini featured a smaller notch and the new A15 Bionic chip."
   },
   {
     "title": "IOS 15",
@@ -482,7 +518,8 @@
       "ios15/2.heic",
       "ios15/3.heic",
       "ios15/4.heic"
-    ]
+    ],
+    "description": "Announced at WWDC on June 7, 2021, and released September 20, 2021, iOS 15 introduced FaceTime SharePlay, redesigned notifications, and Focus modes for filtering distractions."
   },
   {
     "title": "iPhone 12 PRO / 12 PRO MAX",
@@ -497,7 +534,8 @@
       "iphone12pro/6.heic.png",
       "iphone12pro/7.heic.png",
       "iphone12pro/8.heic.png"
-    ]
+    ],
+    "description": "Announced October 13, 2020, the iPhone 12 Pro and Pro Max were Apple's first 5G iPhones, adding a LiDAR scanner for improved AR and low-light autofocus, along with MagSafe magnetic accessories."
   },
   {
     "title": "iPhone 12 / 12 Mini",
@@ -516,7 +554,8 @@
       "iphone12/10.jpg",
       "iphone12/11.heic",
       "iphone12/12.heic"
-    ]
+    ],
+    "description": "Unveiled alongside the Pro models on October 13, 2020, the iPhone 12 and 12 Mini brought back the flat-edge design last seen on the iPhone 5 and added 5G connectivity."
   },
   {
     "title": "IOS 14",
@@ -529,7 +568,8 @@
       "ios14/4.heic",
       "ios14/5.heic",
       "ios14/6.heic"
-    ]
+    ],
+    "description": "Announced at WWDC on June 22, 2020, and released September 16, 2020, iOS 14 brought Home Screen widgets and the App Library to iPhone for the first time."
   },
   {
     "title": "iPhone 11 PRO / PRO MAX",
@@ -544,7 +584,8 @@
       "iphone11pro/6.jpg",
       "iphone11pro/7.png",
       "iphone11pro/8.jpg"
-    ]
+    ],
+    "description": "Launched September 10, 2019, the iPhone 11 Pro and Pro Max introduced Apple's first triple-camera system and a dedicated Night mode for low-light photography."
   },
   {
     "title": "iPhone 11",
@@ -563,7 +604,8 @@
       "iphone11/10.jpg",
       "iphone11/11.jpg",
       "iphone11/12.jpg"
-    ]
+    ],
+    "description": "Released September 10, 2019, the standard iPhone 11 added a second, ultra-wide camera lens and was powered by the A13 Bionic chip."
   },
   {
     "title": "IOS 13",
@@ -578,7 +620,8 @@
       "ios13/6.jpeg",
       "ios13/7.jpeg",
       "ios13/8.jpeg"
-    ]
+    ],
+    "description": "Announced at WWDC on June 3, 2019, and released September 19, 2019, iOS 13 introduced system-wide Dark Mode to iPhone for the first time."
   },
   {
     "title": "iPhone XS / XS MAX",
@@ -591,7 +634,8 @@
       "iphonexs/4.jpg",
       "iphonexs/5.jpg",
       "iphonexs/6.jpg"
-    ]
+    ],
+    "description": "Announced September 12, 2018, the iPhone XS and XS Max carried forward the Face ID design introduced with the iPhone X, powered by the A12 Bionic chip and offering dual-SIM support."
   },
   {
     "title": "iPhone XR",
@@ -610,7 +654,8 @@
       "iphonexr/10.jpg",
       "iphonexr/11.jpg",
       "iphonexr/12.jpg"
-    ]
+    ],
+    "description": "Launched alongside the XS models on September 12, 2018, the iPhone XR offered the Face ID design at a lower price with an LCD \"Liquid Retina\" display and a wider range of colors."
   },
   {
     "title": "IOS 12",
@@ -618,7 +663,8 @@
     "date": "June 4, 2018",
     "images": [
       "ios12/1.jpg"
-    ]
+    ],
+    "description": "Announced at WWDC on June 4, 2018, and released September 17, 2018, iOS 12 introduced Screen Time for tracking app usage and Memoji, animated personal avatars."
   },
   {
     "title": "iPhone X",
@@ -629,7 +675,8 @@
       "iphonex/2.jpg",
       "iphonex/3.jpg",
       "iphonex/4.jpg"
-    ]
+    ],
+    "description": "Released to mark the iPhone's 10th anniversary on September 12, 2017, the iPhone X removed the Home button entirely, introducing Face ID and an edge-to-edge OLED display for the first time."
   },
   {
     "title": "iPhone 8 / 8 Plus",
@@ -639,9 +686,10 @@
       "iphone8/1.jpg",
       "iphone8/2.jpg",
       "iphone8/3.jpg"
-    ]
+    ],
+    "description": "Launched the same day as the iPhone X, September 12, 2017, the iPhone 8 and 8 Plus kept the classic Home button design but switched to a glass back, enabling wireless charging for the first time on iPhone."
   },
-    {
+  {
     "title": "IOS 11",
     "brand": "apple",
     "date": "June 5, 2017",
@@ -651,9 +699,10 @@
       "ios11/3.jpeg",
       "ios11/4.jpeg",
       "ios11/5.jpeg"
-    ]
+    ],
+    "description": "Announced at WWDC on June 5, 2017, and released September 19, 2017, iOS 11 redesigned the App Store and Control Center and brought drag-and-drop multitasking to iPad."
   },
-    {
+  {
     "title": "IOS 11 Flower",
     "brand": "apple",
     "date": "June 5, 2017",
@@ -664,7 +713,8 @@
       "ios11flower/4.jpeg",
       "ios11flower/5.jpeg",
       "ios11flower/6.jpeg"
-    ]
+    ],
+    "description": "\"Flower\" is one of the built-in stock wallpaper categories Apple shipped with iOS 11, featuring close-up floral photography as an alternative to the system's default abstract wallpapers."
   },
   {
     "title": "IOS 11 Retro Rainbow",
@@ -678,7 +728,8 @@
       "ios11retro/5.jpeg",
       "ios11retro/6.jpeg",
       "ios11retro/7.jpeg"
-    ]
+    ],
+    "description": "\"Retro Rainbow\" is a stock wallpaper set bundled with iOS 11, echoing Apple's original 1977 rainbow logo with colorful striped patterns."
   },
   {
     "title": "IOS 11 Space",
@@ -688,7 +739,8 @@
       "ios11space/1.png",
       "ios11space/2.png",
       "ios11space/3.png"
-    ]
+    ],
+    "description": "\"Space\" is one of iOS 11's built-in stock wallpaper categories, featuring imagery of planets, nebulae, and starfields for the Lock Screen and Home Screen."
   },
   {
     "title": "Samsung Galaxy S8",
@@ -715,7 +767,8 @@
       "galaxys8/15.jpg",
       "galaxys8/1.jpg",
       "galaxys8/5.jpg"
-    ]
+    ],
+    "description": "Announced March 29, 2017, and released April 21, the Galaxy S8 introduced Samsung's edge-to-edge \"Infinity Display\" and debuted the Bixby voice assistant."
   },
   {
     "title": "IOS 10",
@@ -726,7 +779,8 @@
       "ios10/2.png",
       "ios10/3.png",
       "ios10/4.png"
-    ]
+    ],
+    "description": "Announced at WWDC on June 13, 2016, and released September 13, 2016, iOS 10 redesigned the Lock Screen with interactive widgets and introduced \"Raise to Wake.\""
   },
   {
     "title": "IOS 9",
@@ -748,7 +802,8 @@
       "ios9/13.png",
       "ios9/14.png",
       "ios9/15.png"
-    ]
+    ],
+    "description": "Announced at WWDC on June 8, 2015, and released September 16, 2015, iOS 9 brought Split View multitasking to iPad and laid the groundwork for later battery-saving features."
   },
   {
     "title": "IOS 9 beta",
@@ -756,6 +811,7 @@
     "date": "June 8, 2015",
     "images": [
       "ios9beta/1.png"
-    ]
+    ],
+    "description": "The iOS 9 developer beta was released June 8, 2015, right after its WWDC announcement, giving developers early access to test the update months ahead of its public release."
   }
 ]

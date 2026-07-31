@@ -27,14 +27,12 @@ function getBrandLabel(brand) {
   return brand.charAt(0).toUpperCase() + brand.slice(1);
 }
 
-function optimizedUrl(url, width) {
-  return `https://wsrv.nl/?url=${encodeURIComponent(url)}&w=${width}&q=75&output=webp`;
-}
-
-const CDN_BASE = 'https://cdn.jsdelivr.net/gh/axrnovi/axrnovi-wallpapers@main/';
-
-function resolveUrl(relativePath) {
-  return CDN_BASE + relativePath;
+function slugify(title) {
+  return title
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/-+/g, '-')
+    .replace(/^-|-$/g, '');
 }
 
 function getPreviewImages(item) {
@@ -42,12 +40,6 @@ function getPreviewImages(item) {
     return item.previews.map(resolveUrl);
   }
   return (item.images || []).slice(0, 3).map(resolveUrl);
-}
-
-function escapeHtml(str) {
-  const div = document.createElement('div');
-  div.textContent = str;
-  return div.innerHTML;
 }
 
 function renderLoadingState() {
@@ -169,8 +161,9 @@ function getFilteredData() {
 }
 
 function createWallpaperCard(item) {
-  const card = document.createElement('div');
+  const card = document.createElement('a');
   card.className = 'wallpaper-card';
+  card.href = `collections/${slugify(item.title)}.html`;
 
   const previewImages = getPreviewImages(item);
   let mediaHtml = '<div class="card-media-wrapper">';
@@ -197,7 +190,6 @@ function createWallpaperCard(item) {
 
   card.innerHTML = mediaHtml + infoHtml;
 
-  card.onclick = () => openModal(item);
   return card;
 }
 
@@ -255,52 +247,6 @@ function loadMore() {
   observeLazyImages(grid);
   initSliders();
   updateLoadMoreButton(filteredData.length);
-}
-
-function isMobileOrTablet() {
-  return window.matchMedia('(hover: none) and (pointer: coarse)').matches;
-}
-
-async function downloadImage(url, filename) {
-  if (isMobileOrTablet()) {
-    try {
-      const response = await fetch(url);
-      if (!response.ok) throw new Error('Network response was not ok');
-      const blob = await response.blob();
-      const file = new File([blob], filename, { type: blob.type || 'image/jpeg' });
-
-      if (navigator.canShare && navigator.canShare({ files: [file] })) {
-        await navigator.share({ files: [file] });
-        return;
-      }
-      window.open(url, '_blank');
-      return;
-    } catch (error) {
-      if (error && error.name === 'AbortError') return;
-      console.error('Share failed, opening image instead:', error);
-      window.open(url, '_blank');
-      return;
-    }
-  }
-
-  try {
-    const response = await fetch(url);
-    if (!response.ok) throw new Error('Network response was not ok');
-    const blob = await response.blob();
-    const blobUrl = URL.createObjectURL(blob);
-
-    const link = document.createElement('a');
-    link.href = blobUrl;
-    link.download = filename;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-
-    setTimeout(() => URL.revokeObjectURL(blobUrl), 1000);
-  } catch (error) {
-    console.error('Download failed, opening image instead:', error);
-    window.open(url, '_blank');
-  }
 }
 
 const LAZY_LOAD_MARGIN_PX = 800;
@@ -449,155 +395,6 @@ function handleSearchInput(value) {
   searchQuery = value.trim().toLowerCase();
   visibleCount = PAGE_SIZE;
   renderGrid();
-}
-
-let lockedScrollY = 0;
-
-function lockBodyScroll() {
-  lockedScrollY = window.scrollY;
-
-  const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
-  const currentPaddingRight = parseFloat(getComputedStyle(document.body).paddingRight) || 0;
-
-  document.body.style.position = 'fixed';
-  document.body.style.top = `-${lockedScrollY}px`;
-  document.body.style.left = '0';
-  document.body.style.right = '0';
-  document.body.style.width = '100%';
-
-  if (scrollbarWidth > 0) {
-    document.body.style.paddingRight = `${currentPaddingRight + scrollbarWidth}px`;
-  }
-}
-
-function unlockBodyScroll() {
-  document.body.style.position = '';
-  document.body.style.top = '';
-  document.body.style.left = '';
-  document.body.style.right = '';
-  document.body.style.width = '';
-  document.body.style.paddingRight = '';
-
-  const html = document.documentElement;
-  const previousScrollBehavior = html.style.scrollBehavior;
-  html.style.scrollBehavior = 'auto';
-  window.scrollTo(0, lockedScrollY);
-  html.style.scrollBehavior = previousScrollBehavior;
-}
-
-const MODAL_ITEMS_BATCH_SIZE = 4;
-
-function createModalItemWrapper(item, relativePath, index) {
-  const imgUrl = resolveUrl(relativePath);
-  const ext = relativePath.includes('.') ? relativePath.split('.').pop() : 'jpg';
-  const fallbackName = `${item.title}-${index + 1}.${ext}`;
-
-  const itemWrapper = document.createElement('div');
-  itemWrapper.className = 'modal-item-wrapper';
-  itemWrapper.innerHTML = `<img src="${optimizedUrl(imgUrl, 600)}" alt="${item.title}" loading="lazy" decoding="async">`;
-
-  const downloadBtn = document.createElement('button');
-  downloadBtn.type = 'button';
-  downloadBtn.className = 'download-single-btn';
-  downloadBtn.textContent = 'Download';
-  downloadBtn.addEventListener('click', () => downloadImage(imgUrl, fallbackName));
-
-  itemWrapper.appendChild(downloadBtn);
-  return itemWrapper;
-}
-
-function appendModalItemsInBatches(item, images, grid, startIndex) {
-  const endIndex = Math.min(startIndex + MODAL_ITEMS_BATCH_SIZE, images.length);
-
-  for (let i = startIndex; i < endIndex; i++) {
-    grid.appendChild(createModalItemWrapper(item, images[i], i));
-  }
-
-  if (endIndex < images.length) {
-    requestAnimationFrame(() => appendModalItemsInBatches(item, images, grid, endIndex));
-  }
-}
-
-let modalHistoryPushed = false;
-
-function pushModalHistoryState() {
-  history.pushState({ archiveModalOpen: true }, '', location.href);
-  modalHistoryPushed = true;
-}
-
-function closeActiveModalUI() {
-  const wallpaperModal = document.getElementById('wallpaperModal');
-  const aboutModal = document.getElementById('aboutModal');
-  let closedSomething = false;
-
-  if (wallpaperModal.classList.contains('active')) {
-    wallpaperModal.classList.remove('active');
-    closedSomething = true;
-  }
-  if (aboutModal.classList.contains('active')) {
-    aboutModal.classList.remove('active');
-    closedSomething = true;
-  }
-
-  if (closedSomething) {
-    requestAnimationFrame(() => {
-      unlockBodyScroll();
-    });
-  }
-}
-
-function requestModalClose() {
-  if (modalHistoryPushed) {
-    history.back();
-  } else {
-    closeActiveModalUI();
-  }
-}
-
-window.addEventListener('popstate', () => {
-  if (modalHistoryPushed) {
-    modalHistoryPushed = false;
-    closeActiveModalUI();
-  }
-});
-
-function openModal(item) {
-  const modal = document.getElementById('wallpaperModal');
-  const modalTitleEl = document.getElementById('modalTitle');
-  modalTitleEl.innerHTML = `
-    ${item.title}
-    ${item.date ? `<div class="modal-date">${item.date}</div>` : ''}
-  `;
-
-  const modalGrid = document.getElementById('modalGrid');
-  modalGrid.innerHTML = '';
-
-  appendModalItemsInBatches(item, item.images || [], modalGrid, 0);
-
-  pushModalHistoryState();
-  lockBodyScroll();
-  void modal.offsetHeight;
-  requestAnimationFrame(() => {
-    modal.classList.add('active');
-  });
-}
-
-function closeModal(e) {
-  requestModalClose();
-}
-
-function openAboutModal() {
-  const modal = document.getElementById('aboutModal');
-  pushModalHistoryState();
-  lockBodyScroll();
-  void modal.offsetHeight;
-  requestAnimationFrame(() => {
-    modal.classList.add('active');
-  });
-}
-
-function closeAboutModal(e) {
-  requestModalClose();
 }
 
 document.addEventListener("DOMContentLoaded", loadWallpaperData);

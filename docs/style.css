@@ -20,7 +20,6 @@
     --fs-display: 36px;
 
     --radius-tiny: 12px;
-    --radius-compact: 21px;
     --radius-base: 25px;
 
     --transition-base: 0.2s ease;
@@ -118,7 +117,6 @@ body {
 }
 
 .btn.about-btn {
-    display: inline-block;
     width: auto;
     padding: 9px 36px;
     box-sizing: border-box;
@@ -374,6 +372,8 @@ body {
     position: relative;
     content-visibility: auto;
     contain-intrinsic-size: auto 440px;
+    text-decoration: none;
+    color: inherit;
 }
 
 .wallpaper-card:active {
@@ -475,46 +475,10 @@ body {
     padding: 12px 32px;
 }
 
-.modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    height: 100dvh;
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    pointer-events: none;
-    visibility: hidden;
-    transition: visibility 0s linear 0.18s;
-}
-
-.modal-overlay.active {
-    visibility: visible;
-    transition-delay: 0s;
-    pointer-events: auto;
-}
-
-.modal-content {
-    width: 100%;
-    height: 100%;
-    padding: 16px;
-    overflow-y: auto;
-    opacity: 0;
-    transition: opacity 0.18s ease;
-    position: relative;
-    background: var(--main);
-}
-
 .modal-inner {
     width: 100%;
     max-width: 480px;
     margin: 0 auto;
-}
-
-.modal-overlay.active .modal-content {
-    opacity: 1;
 }
 
 .modal-header {
@@ -532,6 +496,7 @@ body {
     font-size: var(--fs-title);
     color: var(--text-btn);
     font-weight: 700;
+    text-decoration: none;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -548,6 +513,11 @@ body {
     }
 }
 
+.modal-back svg {
+    width: 20px;
+    height: 20px;
+}
+
 .modal-back:active {
     transform: scale(0.90);
 }
@@ -556,13 +526,30 @@ body {
     grid-column: 3;
 }
 
-.modal-title {
-    grid-column: 2;
-    font-size: var(--fs-title);
-    font-weight: 900;
-    color: var(--text-primary);
+.collection-hero {
     text-align: center;
+    padding: 0 8px;
+    margin-bottom: 32px;
+}
+
+.modal-title {
+    font-size: var(--fs-display);
+    font-weight: 900;
+    letter-spacing: -0.01em;
+    color: var(--accent);
+    line-height: 1.3;
+    text-shadow:
+        0 0px 0 rgba(255, 255, 255, 0.5),
+        0 0px 18px rgba(var(--accent-rgb), 0.35);
     margin: 0;
+}
+
+.collection-description {
+    font-size: var(--fs-base);
+    line-height: 1.6;
+    color: var(--text-secondary);
+    max-width: 480px;
+    margin: 18px auto 0 auto;
 }
 
 .modal-date {
@@ -585,7 +572,7 @@ body {
     position: relative;
     width: 100%;
     aspect-ratio: 9 / 16;
-    border-radius: var(--radius-compact);
+    border-radius: var(--radius-base);
     overflow: hidden;
     border: 1px solid var(--bg-surface)
 }
@@ -594,6 +581,43 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.download-all-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 9px 20px;
+    font-size: var(--fs-small);
+    font-weight: 700;
+    color: var(--text-btn);
+    background: var(--bg-surface);
+    border-radius: var(--radius-base);
+    border: none;
+    cursor: pointer;
+    margin-top: 18px;
+    transition: transform var(--transition-base);
+}
+
+@media (hover: hover) {
+    .download-all-btn:hover {
+        transform: scale(1.03);
+    }
+}
+
+.download-all-btn:active {
+    transform: scale(0.94);
+}
+
+.similar-heading {
+    font-size: var(--fs-title);
+    font-weight: 900;
+    color: var(--text-primary);
+    text-align: center;
+    margin: 64px 0 16px 0;
+    padding-top: 24px;
+    border-top: 1px solid var(--bg-surface);
 }
 
 .download-single-btn {
@@ -733,6 +757,10 @@ body {
         grid-template-columns: repeat(3, 1fr);
     }
 
+    .similar-grid .wallpaper-card:nth-child(4) {
+        display: none;
+    }
+
     .modal-inner-wide {
         max-width: 760px;
     }
@@ -742,7 +770,7 @@ body {
     }
 
     .modal-title {
-        font-size: 22px;
+        font-size: 46px;
     }
 
     .about-name {
@@ -805,6 +833,12 @@ body {
 }
 
     .walls-title {
+        text-shadow:
+          0 0px 0 rgba(255, 255, 255, 0.5),
+          0 0px 18px rgba(var(--accent-rgb), 0.5);
+    }
+
+    .modal-title {
         text-shadow:
           0 0px 0 rgba(255, 255, 255, 0.5),
           0 0px 18px rgba(var(--accent-rgb), 0.5);
