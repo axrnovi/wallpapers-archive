@@ -4,12 +4,42 @@
     "brand": "apple",
     "date": "June 8, 2026",
     "images": [
-      "ios27/1.jpg",
-      "ios27/2.jpg",
-      "ios27/3.png",
-      "ios27/4.jpg",
-      "ios27/5.png",
-      "ios27/6.png"
+      {
+        "src": "ios27/1.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios27/2.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios27/3.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios27/4.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios27/5.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios27/6.png",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "description": "iOS 27 was unveiled at Apple's Worldwide Developers Conference on June 8, 2026, as the successor to iOS 26. Its headline feature is Siri AI, a rebuilt version of Siri built on generative AI models capable of holding natural, back-and-forth conversations. The update reached the public in September 2026 alongside the new iPhone lineup."
   },
@@ -18,7 +48,13 @@
     "date": "June 8, 2026",
     "brand": "apple",
     "images": [
-      "wwdc26/1.png"
+      {
+        "src": "wwdc26/1.png",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
     ],
     "description": "WWDC 2026 was Apple's annual developer conference, kicking off on June 8, 2026 with the keynote where iOS 27, along with iPadOS 27, macOS Golden Gate, watchOS 27 and other platform updates were unveiled. It also marked Tim Cook's final keynote as Apple's CEO before handing the role to hardware engineering chief John Ternus."
   },
@@ -27,42 +63,198 @@
     "brand": "huawei",
     "date": "April 20, 2026",
     "images": [
-      "huaweipuraxmax/1.jpg",
-      "huaweipuraxmax/2.jpg",
-      "huaweipuraxmax/3.jpg",
-      "huaweipuraxmax/4.jpg",
-      "huaweipuraxmax/5.jpg",
-      "huaweipuraxmax/6.jpg",
-      "huaweipuraxmax/7.jpg",
-      "huaweipuraxmax/8.jpg",
-      "huaweipuraxmax/9.jpg",
-      "huaweipuraxmax/10.jpg",
-      "huaweipuraxmax/11.jpg",
-      "huaweipuraxmax/12.jpg",
-      "huaweipuraxmax/13.jpg",
-      "huaweipuraxmax/14.jpg",
-      "huaweipuraxmax/15.jpg",
-      "huaweipuraxmax/16.jpg"
+      {
+        "src": "huaweipuraxmax/1.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "huaweipuraxmax/2.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "huaweipuraxmax/3.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "huaweipuraxmax/4.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "huaweipuraxmax/5.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "huaweipuraxmax/6.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "huaweipuraxmax/7.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "huaweipuraxmax/8.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "huaweipuraxmax/9.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "huaweipuraxmax/10.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "huaweipuraxmax/11.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "huaweipuraxmax/12.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "huaweipuraxmax/13.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "huaweipuraxmax/14.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "huaweipuraxmax/15.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "huaweipuraxmax/16.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
     ],
-    "description": "The Huawei Pura X is a foldable smartphone released March 20, 2025, using Huawei's vertical \"wide-folding\" hinge design. It packs a 6.3-inch inner display and a 3.5-inch outer OLED screen into a body 36% thinner than Huawei's earlier foldables."
+    "description": "The Huawei Pura X Max launched in China on April 20, 2026, alongside the Pura 90 series, introducing a new \"wide foldable\" book-style design with a broader 16:10 aspect ratio. It features a 7.7-inch inner display and a 5.4-inch outer OLED cover screen, powered by the Kirin 9030 Pro chipset."
   },
   {
     "title": "Huavei Pura 90 PRO",
     "brand": "huawei",
     "date": "April 20, 2026",
     "images": [
-      "huaweipura90pro/1.jpg",
-      "huaweipura90pro/2.jpg",
-      "huaweipura90pro/3.jpg",
-      "huaweipura90pro/4.jpg",
-      "huaweipura90pro/5.jpg",
-      "huaweipura90pro/6.jpg",
-      "huaweipura90pro/7.jpg",
-      "huaweipura90pro/8.jpg",
-      "huaweipura90pro/9.jpg",
-      "huaweipura90pro/10.jpg",
-      "huaweipura90pro/11.jpg",
-      "huaweipura90pro/12.jpg"
+      {
+        "src": "huaweipura90pro/1.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "huaweipura90pro/2.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "huaweipura90pro/3.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "huaweipura90pro/4.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "huaweipura90pro/5.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "huaweipura90pro/6.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "huaweipura90pro/7.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "huaweipura90pro/8.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "huaweipura90pro/9.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "huaweipura90pro/10.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "huaweipura90pro/11.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "huaweipura90pro/12.jpg",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "description": "The Huawei Pura 90 Pro launched in China on April 20, 2026, continuing the Pura series' signature triangular camera module in a new gradient finish. It's powered by the Kirin 9030S chip and features a 200-megapixel periscope telephoto lens."
   },
@@ -71,9 +263,24 @@
     "brand": "apple",
     "date": "March 2, 2026",
     "images": [
-      "iphone17e/1.png",
-      "iphone17e/2.png",
-      "iphone17e/3.png"
+      {
+        "src": "iphone17e/1.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone17e/2.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone17e/3.png",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "description": "Announced March 2, 2026, and released March 11, the iPhone 17e is Apple's budget model, priced at $599. It upgrades on the iPhone 16e with the A19 chip, the faster C1X modem, and — for the first time in this lineup — MagSafe wireless charging."
   },
@@ -82,22 +289,62 @@
     "brand": "samsung",
     "date": "February 25, 2026",
     "images": [
-      "galaxys26ultra/1.png",
-      "galaxys26ultra/2.png",
-      "galaxys26ultra/3.png",
-      "galaxys26ultra/4.png",
-      "galaxys26ultra/5.png",
-      "galaxys26ultra/6.png"
+      {
+        "src": "galaxys26ultra/1.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "galaxys26ultra/2.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "galaxys26ultra/3.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "galaxys26ultra/4.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "galaxys26ultra/5.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "galaxys26ultra/6.png",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "description": "The Galaxy S26 Ultra was announced at Samsung's Unpacked event in San Francisco on February 25, 2026, going on sale March 11. Its standout feature is a new Privacy Display that can dim the screen from side angles, keeping onlookers from seeing what's on it, alongside the Snapdragon 8 Elite Gen 5 chip."
   },
   {
     "title": "Oppo Find X9 Ultra",
     "brand": "oppo",
-    "date": "January 8, 2026",
+    "date": "April 21, 2026",
     "images": [
-      "oppofindx9ultra/1.png",
-      "oppofindx9ultra/2.png"
+      {
+        "src": "oppofindx9ultra/1.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "oppofindx9ultra/2.png",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "description": "The Oppo Find X9 Ultra launched April 21, 2026, in China and select global markets as one of the year's most camera-focused flagships. It packs a quad-camera system with a 200-megapixel main sensor and a 200-megapixel periscope telephoto lens, powered by the Snapdragon 8 Elite Gen 5."
   },
@@ -106,21 +353,56 @@
     "brand": "xiaomi",
     "date": "December 25, 2025",
     "images": [
-      "xiaomi17ultra/1.jpg",
-      "xiaomi17ultra/2.jpg",
-      "xiaomi17ultra/3.jpg",
-      "xiaomi17ultra/4.jpg"
+      {
+        "src": "xiaomi17ultra/1.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "xiaomi17ultra/2.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "xiaomi17ultra/3.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "xiaomi17ultra/4.jpg",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "description": "The Xiaomi 17 Ultra debuted in China on December 25, 2025, before its global launch in Barcelona on February 28, 2026, just ahead of Mobile World Congress. Built with Leica, it features a 1-inch main camera sensor and a 200-megapixel periscope telephoto lens."
   },
   {
     "title": "Vivo X300s",
     "brand": "vivo",
-    "date": "November 10, 2025",
+    "date": "March 30, 2026",
     "images": [
-      "vivox300s/1.png",
-      "vivox300s/2.png",
-      "vivox300s/3.png"
+      {
+        "src": "vivox300s/1.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "vivox300s/2.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "vivox300s/3.png",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "description": "The Vivo X300s launched in China on March 30, 2026, becoming the first phone in Vivo's X series with a 144Hz display. It also carries the largest battery yet in the lineup at 7,100mAh, alongside a 200-megapixel Zeiss-branded main camera."
   },
@@ -129,11 +411,36 @@
     "brand": "xiaomi",
     "date": "October 23, 2025",
     "images": [
-      "redmik90promax/1.jpg",
-      "redmik90promax/2.jpg",
-      "redmik90promax/3.jpg",
-      "redmik90promax/4.jpg",
-      "redmik90promax/5.jpg"
+      {
+        "src": "redmik90promax/1.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "redmik90promax/2.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "redmik90promax/3.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "redmik90promax/4.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "redmik90promax/5.jpg",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "description": "Announced in October 2025 and released in China on October 23, the Redmi K90 Pro Max is the first \"Pro Max\" model in Redmi's K series. It pairs the Snapdragon 8 Elite Gen 5 chip with a periscope telephoto camera and a Bose-tuned loudspeaker."
   },
@@ -142,9 +449,24 @@
     "brand": "vivo",
     "date": "October 13, 2025",
     "images": [
-      "vivox300pro/1.png",
-      "vivox300pro/2.png",
-      "vivox300pro/3.png"
+      {
+        "src": "vivox300pro/1.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "vivox300pro/2.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "vivox300pro/3.png",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "description": "The Vivo X300 Pro was announced October 13 and released October 17, 2025, as the higher-end model in Vivo's X300 series. It runs on MediaTek's then-new Dimensity 9500 chip with a 6.78-inch LTPO OLED display reaching up to 4,500 nits of brightness."
   },
@@ -153,11 +475,36 @@
     "brand": "vivo",
     "date": "October 13, 2025",
     "images": [
-      "vivox300/1.png",
-      "vivox300/2.png",
-      "vivox300/3.png",
-      "vivox300/4.png",
-      "vivox300/5.png"
+      {
+        "src": "vivox300/1.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "vivox300/2.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "vivox300/3.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "vivox300/4.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "vivox300/5.png",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "description": "Launched alongside the Pro model on October 17, 2025, the standard Vivo X300 offers a more compact 6.31-inch display while sharing the same Dimensity 9500 chip as its bigger sibling."
   },
@@ -166,12 +513,42 @@
     "brand": "xiaomi",
     "date": "September 25, 2025",
     "images": [
-      "xiaomi17/1.jpg",
-      "xiaomi17/2.png",
-      "xiaomi17/3.png",
-      "xiaomi17/4.png",
-      "xiaomi17/5.png",
-      "xiaomi17/6.png"
+      {
+        "src": "xiaomi17/1.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "xiaomi17/2.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "xiaomi17/3.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "xiaomi17/4.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "xiaomi17/5.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "xiaomi17/6.png",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "description": "The standard Xiaomi 17 was unveiled in China on September 25, 2025, featuring a 6.3-inch flat OLED display and a large silicon-carbon battery rated at up to 7,000mAh. It reached global markets, including a Leica-branded camera system, in early 2026."
   },
@@ -180,11 +557,36 @@
     "brand": "oppo",
     "date": "September 15, 2025",
     "images": [
-      "oppof31pro/1.png",
-      "oppof31pro/2.png",
-      "oppof31pro/3.png",
-      "oppof31pro/4.png",
-      "oppof31pro/5.png"
+      {
+        "src": "oppof31pro/1.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "oppof31pro/2.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "oppof31pro/3.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "oppof31pro/4.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "oppof31pro/5.png",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "description": "Released in September 2025, the Oppo F31 Pro is a mid-range device built around a large 7,000mAh battery and the MediaTek Dimensity 7300 chip, aimed at buyers who prioritize battery life over flagship specs."
   },
@@ -193,9 +595,24 @@
     "brand": "apple",
     "date": "September 9, 2025",
     "images": [
-      "iphone17pro/1.png",
-      "iphone17pro/2.png",
-      "iphone17pro/3.png"
+      {
+        "src": "iphone17pro/1.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone17pro/2.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone17pro/3.png",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "description": "The iPhone 17 Pro and Pro Max were unveiled at Apple's \"Awe Dropping\" event on September 9, 2025, alongside the standard iPhone 17 and the all-new iPhone Air. Pre-orders opened September 12, with devices arriving in stores on September 19, 2025."
   },
@@ -204,10 +621,30 @@
     "brand": "apple",
     "date": "September 9, 2025",
     "images": [
-      "iphoneair/1.jpg",
-      "iphoneair/2.jpg",
-      "iphoneair/3.jpg",
-      "iphoneair/4.jpg"
+      {
+        "src": "iphoneair/1.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphoneair/2.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphoneair/3.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphoneair/4.jpg",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "previews": [
       "iphoneair/2.jpg",
@@ -221,11 +658,36 @@
     "brand": "apple",
     "date": "September 9, 2025",
     "images": [
-      "iphone17/1.jpg",
-      "iphone17/2.jpg",
-      "iphone17/3.jpg",
-      "iphone17/4.jpg",
-      "iphone17/5.jpg"
+      {
+        "src": "iphone17/1.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone17/2.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone17/3.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone17/4.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone17/5.jpg",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "previews": [
       "iphone17/4.jpg",
@@ -239,11 +701,36 @@
     "brand": "vivo",
     "date": "August 4, 2025",
     "images": [
-      "vivoy400/1.jpg",
-      "vivoy400/2.jpg",
-      "vivoy400/3.jpg",
-      "vivoy400/4.jpg",
-      "vivoy400/5.jpg"
+      {
+        "src": "vivoy400/1.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "vivoy400/2.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "vivoy400/3.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "vivoy400/4.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "vivoy400/5.jpg",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "description": "The Vivo Y400 5G launched in India on August 4, 2025, as a mid-range phone positioned in the sub-₹25,000 segment. It runs on the Snapdragon 4 Gen 2 chipset with a 6.67-inch AMOLED display and 120Hz refresh rate."
   },
@@ -252,10 +739,30 @@
     "brand": "samsung",
     "date": "July 9, 2025",
     "images": [
-      "galaxyzfold7/1.png",
-      "galaxyzfold7/2.png",
-      "galaxyzfold7/3.png",
-      "galaxyzfold7/4.png"
+      {
+        "src": "galaxyzfold7/1.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "galaxyzfold7/2.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "galaxyzfold7/3.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "galaxyzfold7/4.png",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "description": "Announced July 9, 2025, at Samsung's Unpacked event in Brooklyn and released July 25, the Galaxy Z Fold 7 became Samsung's thinnest and lightest book-style foldable to date. It was also the first Samsung foldable to feature a 200-megapixel main camera."
   },
@@ -264,14 +771,54 @@
     "brand": "apple",
     "date": "June 9, 2025",
     "images": [
-      "ios26/1.jpg",
-      "ios26/2.jpeg",
-      "ios26/3.jpg",
-      "ios26/4.jpg",
-      "ios26/5.jpg",
-      "ios26/6.jpg",
-      "ios26/7.jpg",
-      "ios26/8.jpg"
+      {
+        "src": "ios26/1.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios26/2.jpeg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios26/3.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios26/4.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios26/5.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios26/6.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios26/7.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios26/8.jpg",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "previews": [
       "ios26/1.jpg",
@@ -285,7 +832,12 @@
     "brand": "apple",
     "date": "February 19, 2025",
     "images": [
-      "iphone16e/1.png"
+      {
+        "src": "iphone16e/1.png",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "description": "Announced February 19, 2025 and released February 28, the iPhone 16e replaced the iPhone SE line as Apple's budget model, starting at $599. It brought the A18 chip and an edge-to-edge display, though it launched without MagSafe support."
   },
@@ -294,10 +846,30 @@
     "brand": "oppo",
     "date": "December 20, 2024",
     "images": [
-      "oppoa5pro/1.png",
-      "oppoa5pro/2.png",
-      "oppoa5pro/3.png",
-      "oppoa5pro/4.png"
+      {
+        "src": "oppoa5pro/1.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "oppoa5pro/2.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "oppoa5pro/3.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "oppoa5pro/4.png",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "description": "The Oppo A5 Pro launched internationally on February 25, 2025, as a budget-friendly model powered by the MediaTek Dimensity 6300 chip, with a 6.67-inch display and a starting price around €260."
   },
@@ -306,10 +878,30 @@
     "brand": "apple",
     "date": "September 9, 2024",
     "images": [
-      "iphone16pro/1.jpg",
-      "iphone16pro/2.jpg",
-      "iphone16pro/3.jpg",
-      "iphone16pro/4.jpg"
+      {
+        "src": "iphone16pro/1.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone16pro/2.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone16pro/3.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone16pro/4.jpg",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "description": "Unveiled at Apple's \"Glowtime\" event on September 9, 2024, the iPhone 16 Pro and Pro Max introduced the A18 Pro chip and a dedicated Camera Control button. They were the first iPhones built with Apple Intelligence in mind from the ground up."
   },
@@ -318,11 +910,36 @@
     "brand": "apple",
     "date": "September 9, 2024",
     "images": [
-      "iphone16/1.jpg",
-      "iphone16/2.jpg",
-      "iphone16/3.jpeg",
-      "iphone16/4.jpg",
-      "iphone16/5.jpg"
+      {
+        "src": "iphone16/1.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone16/2.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone16/3.jpeg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone16/4.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone16/5.jpg",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "description": "Launched alongside the Pro models on September 9, 2024, the iPhone 16 and 16 Plus brought the Camera Control button and a redesigned vertical camera layout enabling spatial photos and video to the standard lineup."
   },
@@ -331,14 +948,54 @@
     "brand": "apple",
     "date": "June 10, 2024",
     "images": [
-      "ios18/1.png",
-      "ios18/2.png",
-      "ios18/3.png",
-      "ios18/4.png",
-      "ios18/5.png",
-      "ios18/6.png",
-      "ios18/7.png",
-      "ios18/8.png"
+      {
+        "src": "ios18/1.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios18/2.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios18/3.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios18/4.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios18/5.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios18/6.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios18/7.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios18/8.png",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "description": "iOS 18 was announced at WWDC on June 10, 2024, and released September 16, 2024. It introduced Apple Intelligence, customizable Home Screen app icon colors, and a redesigned Control Center."
   },
@@ -347,9 +1004,24 @@
     "brand": "realme",
     "date": "January 29, 2024",
     "images": [
-      "realme12proplus/1.png",
-      "realme12proplus/2.png",
-      "realme12proplus/3.png"
+      {
+        "src": "realme12proplus/1.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "realme12proplus/2.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "realme12proplus/3.png",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "description": "The realme 12 Pro+ was released January 29, 2024, positioned as a mid-range device with camera hardware that punched above its price class, part of realme's push to bring flagship-style photography features downmarket."
   },
@@ -358,22 +1030,118 @@
     "brand": "google",
     "date": "October 4, 2023",
     "images": [
-      "googlepixel8/1.jpeg",
-      "googlepixel8/2.jpeg",
-      "googlepixel8/3.jpeg",
-      "googlepixel8/4.jpeg",
-      "googlepixel8/5.jpeg",
-      "googlepixel8/6.jpeg",
-      "googlepixel8/7.jpeg",
-      "googlepixel8/8.jpeg",
-      "googlepixel8/9.jpeg",
-      "googlepixel8/10.jpeg",
-      "googlepixel8/11.jpeg",
-      "googlepixel8/12.jpeg",
-      "googlepixel8/13.jpeg",
-      "googlepixel8/14.jpeg",
-      "googlepixel8/15.jpeg",
-      "googlepixel8/16.jpeg"
+      {
+        "src": "googlepixel8/1.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "googlepixel8/2.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "googlepixel8/3.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "googlepixel8/4.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "googlepixel8/5.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "googlepixel8/6.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "googlepixel8/7.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "googlepixel8/8.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "googlepixel8/9.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "googlepixel8/10.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "googlepixel8/11.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "googlepixel8/12.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "googlepixel8/13.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "googlepixel8/14.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "googlepixel8/15.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "googlepixel8/16.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
     ],
     "description": "Google unveiled the Pixel 8 at its Made by Google event in New York on October 4, 2023, with sales beginning October 12. It was the first Pixel to launch with a promise of seven years of OS and security updates, powered by Google's Tensor G3 chip."
   },
@@ -382,10 +1150,30 @@
     "brand": "apple",
     "date": "September 12, 2023",
     "images": [
-      "iphone15pro/1.png",
-      "iphone15pro/2.png",
-      "iphone15pro/3.png",
-      "iphone15pro/4.png"
+      {
+        "src": "iphone15pro/1.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone15pro/2.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone15pro/3.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone15pro/4.png",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "description": "Announced September 12, 2023, the iPhone 15 Pro and Pro Max switched to a titanium frame, replaced the mute switch with the Action Button, and debuted the A17 Pro, Apple's first 3-nanometer chip."
   },
@@ -394,11 +1182,36 @@
     "brand": "apple",
     "date": "September 12, 2023",
     "images": [
-      "iphone15/1.jpg",
-      "iphone15/2.jpg",
-      "iphone15/3.jpg",
-      "iphone15/4.jpg",
-      "iphone15/5.jpg"
+      {
+        "src": "iphone15/1.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone15/2.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone15/3.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone15/4.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone15/5.jpg",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "description": "Released alongside the Pro models on September 12, 2023, the iPhone 15 and 15 Plus were the first standard iPhones to switch from Lightning to USB-C and to bring the Dynamic Island to the non-Pro lineup."
   },
@@ -407,8 +1220,18 @@
     "brand": "apple",
     "date": "June 5, 2023",
     "images": [
-      "ios17/2.png",
-      "ios17/1.png"
+      {
+        "src": "ios17/2.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios17/1.png",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "description": "Announced at WWDC on June 5, 2023, and released September 18, 2023, iOS 17 introduced StandBy mode for bedside displays, Live Voicemail, and redesigned Contact Posters for calls."
   },
@@ -417,10 +1240,30 @@
     "brand": "apple",
     "date": "September 7, 2022",
     "images": [
-      "iphone14pro/1.jpeg",
-      "iphone14pro/2.jpeg",
-      "iphone14pro/3.jpeg",
-      "iphone14pro/4.jpeg"
+      {
+        "src": "iphone14pro/1.jpeg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone14pro/2.jpeg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone14pro/3.jpeg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone14pro/4.jpeg",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "previews": [
       "iphone14pro/2.jpeg",
@@ -434,12 +1277,42 @@
     "brand": "apple",
     "date": "September 7, 2022",
     "images": [
-      "iphone14/1.png",
-      "iphone14/2.png",
-      "iphone14/3.png",
-      "iphone14/4.png",
-      "iphone14/5.png",
-      "iphone14/6.jpg"
+      {
+        "src": "iphone14/1.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone14/2.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone14/3.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone14/4.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone14/5.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone14/6.jpg",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "description": "Launched September 7, 2022, the iPhone 14 and 14 Plus introduced Crash Detection and satellite-based Emergency SOS for areas without cellular coverage."
   },
@@ -448,7 +1321,12 @@
     "brand": "apple",
     "date": "June 6, 2022",
     "images": [
-      "ios16/1.jpg"
+      {
+        "src": "ios16/1.jpg",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "description": "Announced at WWDC on June 6, 2022, and released September 12, 2022, iOS 16 let users fully customize the Lock Screen with widgets and multiple styles for the first time."
   },
@@ -457,12 +1335,42 @@
     "brand": "apple",
     "date": "March 8, 2022",
     "images": [
-      "iphonese3/1.heic",
-      "iphonese3/2.heic",
-      "iphonese3/3.heic",
-      "iphonese3/4.heic",
-      "iphonese3/5.heic",
-      "iphonese3/6.heic"
+      {
+        "src": "iphonese3/1.heic",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphonese3/2.heic",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphonese3/3.heic",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphonese3/4.heic",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphonese3/5.heic",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphonese3/6.heic",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "description": "Released March 18, 2022, the third-generation iPhone SE kept the classic iPhone 8 design but added 5G support and the A15 Bionic chip, the same chip found in the iPhone 13."
   },
@@ -471,16 +1379,66 @@
     "brand": "apple",
     "date": "September 14, 2021",
     "images": [
-      "iphone13pro/1.heic",
-      "iphone13pro/2.heic",
-      "iphone13pro/3.heic",
-      "iphone13pro/4.heic",
-      "iphone13pro/5.heic",
-      "iphone13pro/6.heic",
-      "iphone13pro/7.heic",
-      "iphone13pro/8.heic",
-      "iphone13pro/9.png",
-      "iphone13pro/10.png"
+      {
+        "src": "iphone13pro/1.heic",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone13pro/2.heic",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone13pro/3.heic",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone13pro/4.heic",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone13pro/5.heic",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone13pro/6.heic",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone13pro/7.heic",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone13pro/8.heic",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone13pro/9.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone13pro/10.png",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "previews": [
       "iphone13pro/1.heic",
@@ -494,18 +1452,78 @@
     "brand": "apple",
     "date": "September 14, 2021",
     "images": [
-      "iphone13/1.heic",
-      "iphone13/2.heic",
-      "iphone13/3.heic",
-      "iphone13/4.heic",
-      "iphone13/5.heic",
-      "iphone13/6.heic",
-      "iphone13/7.heic",
-      "iphone13/8.heic",
-      "iphone13/9.heic",
-      "iphone13/10.heic",
-      "iphone13/11.png",
-      "iphone13/12.png"
+      {
+        "src": "iphone13/1.heic",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone13/2.heic",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone13/3.heic",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone13/4.heic",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone13/5.heic",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone13/6.heic",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone13/7.heic",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone13/8.heic",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone13/9.heic",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone13/10.heic",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone13/11.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone13/12.png",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "description": "Launched alongside the Pro models on September 14, 2021, the iPhone 13 and 13 Mini featured a smaller notch and the new A15 Bionic chip."
   },
@@ -514,10 +1532,34 @@
     "brand": "apple",
     "date": "June 7, 2021",
     "images": [
-      "ios15/1.heic",
-      "ios15/2.heic",
-      "ios15/3.heic",
-      "ios15/4.heic"
+      {
+        "src": "ios15/1.heic",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "ios15/2.heic",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "ios15/3.heic",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "ios15/4.heic",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
     ],
     "description": "Announced at WWDC on June 7, 2021, and released September 20, 2021, iOS 15 introduced FaceTime SharePlay, redesigned notifications, and Focus modes for filtering distractions."
   },
@@ -526,14 +1568,54 @@
     "brand": "apple",
     "date": "October 13, 2020",
     "images": [
-      "iphone12pro/1.heic.png",
-      "iphone12pro/2.heic.png",
-      "iphone12pro/3.heic.png",
-      "iphone12pro/4.heic.png",
-      "iphone12pro/5.heic.png",
-      "iphone12pro/6.heic.png",
-      "iphone12pro/7.heic.png",
-      "iphone12pro/8.heic.png"
+      {
+        "src": "iphone12pro/1.heic.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone12pro/2.heic.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone12pro/3.heic.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone12pro/4.heic.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone12pro/5.heic.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone12pro/6.heic.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone12pro/7.heic.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone12pro/8.heic.png",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "description": "Announced October 13, 2020, the iPhone 12 Pro and Pro Max were Apple's first 5G iPhones, adding a LiDAR scanner for improved AR and low-light autofocus, along with MagSafe magnetic accessories."
   },
@@ -542,18 +1624,78 @@
     "brand": "apple",
     "date": "October 13, 2020",
     "images": [
-      "iphone12/1.jpg",
-      "iphone12/2.jpg",
-      "iphone12/3.jpg",
-      "iphone12/4.jpg",
-      "iphone12/5.jpg",
-      "iphone12/6.jpg",
-      "iphone12/7.jpg",
-      "iphone12/8.jpg",
-      "iphone12/9.jpg",
-      "iphone12/10.jpg",
-      "iphone12/11.heic",
-      "iphone12/12.heic"
+      {
+        "src": "iphone12/1.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone12/2.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone12/3.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone12/4.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone12/5.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone12/6.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone12/7.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone12/8.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone12/9.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone12/10.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone12/11.heic",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone12/12.heic",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "description": "Unveiled alongside the Pro models on October 13, 2020, the iPhone 12 and 12 Mini brought back the flat-edge design last seen on the iPhone 5 and added 5G connectivity."
   },
@@ -562,12 +1704,48 @@
     "brand": "apple",
     "date": "June 22, 2020",
     "images": [
-      "ios14/1.heic",
-      "ios14/2.heic",
-      "ios14/3.heic",
-      "ios14/4.heic",
-      "ios14/5.heic",
-      "ios14/6.heic"
+      {
+        "src": "ios14/1.heic",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "ios14/2.heic",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "ios14/3.heic",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "ios14/4.heic",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "ios14/5.heic",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "ios14/6.heic",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
     ],
     "description": "Announced at WWDC on June 22, 2020, and released September 16, 2020, iOS 14 brought Home Screen widgets and the App Library to iPhone for the first time."
   },
@@ -576,14 +1754,54 @@
     "brand": "apple",
     "date": "September 10, 2019",
     "images": [
-      "iphone11pro/1.png",
-      "iphone11pro/2.jpg",
-      "iphone11pro/3.png",
-      "iphone11pro/4.jpg",
-      "iphone11pro/5.png",
-      "iphone11pro/6.jpg",
-      "iphone11pro/7.png",
-      "iphone11pro/8.jpg"
+      {
+        "src": "iphone11pro/1.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone11pro/2.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone11pro/3.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone11pro/4.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone11pro/5.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone11pro/6.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone11pro/7.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone11pro/8.jpg",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "description": "Launched September 10, 2019, the iPhone 11 Pro and Pro Max introduced Apple's first triple-camera system and a dedicated Night mode for low-light photography."
   },
@@ -592,18 +1810,78 @@
     "brand": "apple",
     "date": "September 10, 2019",
     "images": [
-      "iphone11/1.jpg",
-      "iphone11/2.jpg",
-      "iphone11/3.jpg",
-      "iphone11/4.jpg",
-      "iphone11/5.jpg",
-      "iphone11/6.jpg",
-      "iphone11/7.jpg",
-      "iphone11/8.jpg",
-      "iphone11/9.jpg",
-      "iphone11/10.jpg",
-      "iphone11/11.jpg",
-      "iphone11/12.jpg"
+      {
+        "src": "iphone11/1.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone11/2.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone11/3.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone11/4.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone11/5.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone11/6.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone11/7.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone11/8.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone11/9.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone11/10.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone11/11.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone11/12.jpg",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "description": "Released September 10, 2019, the standard iPhone 11 added a second, ultra-wide camera lens and was powered by the A13 Bionic chip."
   },
@@ -612,14 +1890,62 @@
     "brand": "apple",
     "date": "June 3, 2019",
     "images": [
-      "ios13/1.jpeg",
-      "ios13/2.jpeg",
-      "ios13/3.jpeg",
-      "ios13/4.jpeg",
-      "ios13/5.jpeg",
-      "ios13/6.jpeg",
-      "ios13/7.jpeg",
-      "ios13/8.jpeg"
+      {
+        "src": "ios13/1.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "ios13/2.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "ios13/3.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "ios13/4.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "ios13/5.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "ios13/6.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "ios13/7.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "ios13/8.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
     ],
     "description": "Announced at WWDC on June 3, 2019, and released September 19, 2019, iOS 13 introduced system-wide Dark Mode to iPhone for the first time."
   },
@@ -628,12 +1954,42 @@
     "brand": "apple",
     "date": "September 12, 2018",
     "images": [
-      "iphonexs/1.jpg",
-      "iphonexs/2.jpg",
-      "iphonexs/3.jpg",
-      "iphonexs/4.jpg",
-      "iphonexs/5.jpg",
-      "iphonexs/6.jpg"
+      {
+        "src": "iphonexs/1.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphonexs/2.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphonexs/3.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphonexs/4.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphonexs/5.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphonexs/6.jpg",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "description": "Announced September 12, 2018, the iPhone XS and XS Max carried forward the Face ID design introduced with the iPhone X, powered by the A12 Bionic chip and offering dual-SIM support."
   },
@@ -642,18 +1998,90 @@
     "brand": "apple",
     "date": "September 12, 2018",
     "images": [
-      "iphonexr/1.jpg",
-      "iphonexr/2.jpg",
-      "iphonexr/3.jpg",
-      "iphonexr/4.jpg",
-      "iphonexr/5.jpg",
-      "iphonexr/6.jpg",
-      "iphonexr/7.jpg",
-      "iphonexr/8.jpg",
-      "iphonexr/9.jpg",
-      "iphonexr/10.jpg",
-      "iphonexr/11.jpg",
-      "iphonexr/12.jpg"
+      {
+        "src": "iphonexr/1.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "iphonexr/2.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "iphonexr/3.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "iphonexr/4.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "iphonexr/5.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "iphonexr/6.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "iphonexr/7.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "iphonexr/8.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "iphonexr/9.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "iphonexr/10.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "iphonexr/11.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "iphonexr/12.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
     ],
     "description": "Launched alongside the XS models on September 12, 2018, the iPhone XR offered the Face ID design at a lower price with an LCD \"Liquid Retina\" display and a wider range of colors."
   },
@@ -662,7 +2090,13 @@
     "brand": "apple",
     "date": "June 4, 2018",
     "images": [
-      "ios12/1.jpg"
+      {
+        "src": "ios12/1.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
     ],
     "description": "Announced at WWDC on June 4, 2018, and released September 17, 2018, iOS 12 introduced Screen Time for tracking app usage and Memoji, animated personal avatars."
   },
@@ -671,10 +2105,30 @@
     "brand": "apple",
     "date": "September 12, 2017",
     "images": [
-      "iphonex/1.jpg",
-      "iphonex/2.jpg",
-      "iphonex/3.jpg",
-      "iphonex/4.jpg"
+      {
+        "src": "iphonex/1.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphonex/2.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphonex/3.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphonex/4.jpg",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "description": "Released to mark the iPhone's 10th anniversary on September 12, 2017, the iPhone X removed the Home button entirely, introducing Face ID and an edge-to-edge OLED display for the first time."
   },
@@ -683,9 +2137,24 @@
     "brand": "apple",
     "date": "September 12, 2017",
     "images": [
-      "iphone8/1.jpg",
-      "iphone8/2.jpg",
-      "iphone8/3.jpg"
+      {
+        "src": "iphone8/1.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone8/2.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "iphone8/3.jpg",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "description": "Launched the same day as the iPhone X, September 12, 2017, the iPhone 8 and 8 Plus kept the classic Home button design but switched to a glass back, enabling wireless charging for the first time on iPhone."
   },
@@ -694,11 +2163,41 @@
     "brand": "apple",
     "date": "June 5, 2017",
     "images": [
-      "ios11/1.jpeg",
-      "ios11/2.jpeg",
-      "ios11/3.jpeg",
-      "ios11/4.jpeg",
-      "ios11/5.jpeg"
+      {
+        "src": "ios11/1.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "ios11/2.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "ios11/3.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "ios11/4.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "ios11/5.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
     ],
     "description": "Announced at WWDC on June 5, 2017, and released September 19, 2017, iOS 11 redesigned the App Store and Control Center and brought drag-and-drop multitasking to iPad."
   },
@@ -707,12 +2206,48 @@
     "brand": "apple",
     "date": "June 5, 2017",
     "images": [
-      "ios11flower/1.jpeg",
-      "ios11flower/2.jpeg",
-      "ios11flower/3.jpeg",
-      "ios11flower/4.jpeg",
-      "ios11flower/5.jpeg",
-      "ios11flower/6.jpeg"
+      {
+        "src": "ios11flower/1.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "ios11flower/2.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "ios11flower/3.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "ios11flower/4.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "ios11flower/5.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "ios11flower/6.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
     ],
     "description": "\"Flower\" is one of the built-in stock wallpaper categories Apple shipped with iOS 11, featuring close-up floral photography as an alternative to the system's default abstract wallpapers."
   },
@@ -721,13 +2256,55 @@
     "brand": "apple",
     "date": "June 5, 2017",
     "images": [
-      "ios11retro/1.jpeg",
-      "ios11retro/2.jpeg",
-      "ios11retro/3.jpeg",
-      "ios11retro/4.jpeg",
-      "ios11retro/5.jpeg",
-      "ios11retro/6.jpeg",
-      "ios11retro/7.jpeg"
+      {
+        "src": "ios11retro/1.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "ios11retro/2.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "ios11retro/3.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "ios11retro/4.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "ios11retro/5.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "ios11retro/6.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "ios11retro/7.jpeg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
     ],
     "description": "\"Retro Rainbow\" is a stock wallpaper set bundled with iOS 11, echoing Apple's original 1977 rainbow logo with colorful striped patterns."
   },
@@ -736,9 +2313,27 @@
     "brand": "apple",
     "date": "June 5, 2017",
     "images": [
-      "ios11space/1.png",
-      "ios11space/2.png",
-      "ios11space/3.png"
+      {
+        "src": "ios11space/1.png",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "ios11space/2.png",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "ios11space/3.png",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
     ],
     "description": "\"Space\" is one of iOS 11's built-in stock wallpaper categories, featuring imagery of planets, nebulae, and starfields for the Lock Screen and Home Screen."
   },
@@ -747,21 +2342,96 @@
     "brand": "samsung",
     "date": "March 29, 2017",
     "images": [
-      "galaxys8/1.jpg",
-      "galaxys8/2.jpg",
-      "galaxys8/3.jpg",
-      "galaxys8/4.jpg",
-      "galaxys8/5.jpg",
-      "galaxys8/6.jpg",
-      "galaxys8/7.jpg",
-      "galaxys8/8.png",
-      "galaxys8/9.png",
-      "galaxys8/10.png",
-      "galaxys8/11.jpg",
-      "galaxys8/12.jpg",
-      "galaxys8/13.jpg",
-      "galaxys8/14.jpg",
-      "galaxys8/15.jpg"
+      {
+        "src": "galaxys8/1.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "galaxys8/2.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "galaxys8/3.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "galaxys8/4.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "galaxys8/5.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "galaxys8/6.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "galaxys8/7.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "galaxys8/8.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "galaxys8/9.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "galaxys8/10.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "galaxys8/11.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "galaxys8/12.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "galaxys8/13.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "galaxys8/14.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "galaxys8/15.jpg",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "previews": [
       "galaxys8/15.jpg",
@@ -775,10 +2445,34 @@
     "brand": "apple",
     "date": "June 13, 2016",
     "images": [
-      "ios10/1.png",
-      "ios10/2.png",
-      "ios10/3.png",
-      "ios10/4.png"
+      {
+        "src": "ios10/1.png",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "ios10/2.png",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "ios10/3.png",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "ios10/4.png",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
     ],
     "description": "Announced at WWDC on June 13, 2016, and released September 13, 2016, iOS 10 redesigned the Lock Screen with interactive widgets and introduced \"Raise to Wake.\""
   },
@@ -787,21 +2481,96 @@
     "brand": "apple",
     "date": "June 8, 2015",
     "images": [
-      "ios9/1.png",
-      "ios9/2.png",
-      "ios9/3.png",
-      "ios9/4.png",
-      "ios9/5.png",
-      "ios9/6.png",
-      "ios9/7.png",
-      "ios9/8.png",
-      "ios9/9.png",
-      "ios9/10.png",
-      "ios9/11.png",
-      "ios9/12.png",
-      "ios9/13.png",
-      "ios9/14.png",
-      "ios9/15.png"
+      {
+        "src": "ios9/1.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios9/2.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios9/3.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios9/4.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios9/5.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios9/6.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios9/7.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios9/8.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios9/9.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios9/10.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios9/11.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios9/12.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios9/13.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios9/14.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios9/15.png",
+        "devices": [
+          "phone"
+        ]
+      }
     ],
     "description": "Announced at WWDC on June 8, 2015, and released September 16, 2015, iOS 9 brought Split View multitasking to iPad and laid the groundwork for later battery-saving features."
   },
@@ -810,8 +2579,507 @@
     "brand": "apple",
     "date": "June 8, 2015",
     "images": [
-      "ios9beta/1.png"
+      {
+        "src": "ios9beta/1.png",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
     ],
     "description": "The iOS 9 developer beta was released June 8, 2015, right after its WWDC announcement, giving developers early access to test the update months ahead of its public release."
+  },
+  {
+    "title": "Mac OS X 10.0 Cheetah",
+    "brand": "apple",
+    "date": "January 9, 2001",
+    "description": "Mac OS X 10.0, codenamed Cheetah, was first shown in its near-final form by Steve Jobs at Macworld San Francisco on January 9, 2001, ahead of its retail release on March 24, 2001. It introduced the Aqua interface with its now-iconic Dock, replacing the classic Mac OS after nearly two decades. Despite its groundbreaking design, Cheetah was criticized at launch for being slow and lacking software support.",
+    "images": [
+      {
+        "src": "macosx10.0-10.1/1.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Mac OS X 10.1 Puma",
+    "brand": "apple",
+    "date": "July 18, 2001",
+    "description": "Mac OS X 10.1, codenamed Puma, was previewed by Steve Jobs at the Macworld Expo keynote on July 18, 2001, roughly four months after Mac OS X's initial release. It arrived as a free update on September 25, 2001, significantly improving speed, adding DVD playback support, and expanding hardware compatibility. Puma is often considered the release that made Mac OS X practical for everyday use.",
+    "images": [
+      {
+        "src": "macosx10.0-10.1/1.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Mac OS X 10.2 Jaguar",
+    "brand": "apple",
+    "date": "May 6, 2002",
+    "description": "Mac OS X 10.2, codenamed Jaguar, was unveiled at WWDC on May 6, 2002, ahead of its release on August 23, 2002. It was the first version to use its big-cat codename in official marketing, introducing Quartz Extreme for hardware-accelerated graphics along with the debut of iChat and Address Book. Jaguar brought major stability and speed improvements over earlier releases.",
+    "images": [
+      {
+        "src": "macosx10.2/1.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Mac OS X 10.3 Panther",
+    "brand": "apple",
+    "date": "June 23, 2003",
+    "description": "Mac OS X 10.3, codenamed Panther, was previewed by Steve Jobs on June 23, 2003, with over 100 new features, ahead of its release on October 24, 2003. It brought a visual refresh with a brushed-metal Finder redesign, along with Exposé for managing open windows and Fast User Switching for multiple accounts. Panther was praised for its noticeable performance gains across the system.",
+    "images": [
+      {
+        "src": "macosx10.3/1.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Mac OS X 10.4 Tiger",
+    "brand": "apple",
+    "date": "June 28, 2004",
+    "description": "Mac OS X 10.4, codenamed Tiger, was announced at WWDC on June 28, 2004, nearly a year before its release on April 29, 2005. It introduced Spotlight, Apple's system-wide search feature, along with Dashboard widgets and improved support for the then-new Intel-based Macs later in its lifecycle. Tiger remained in use longer than most versions due to its stability.",
+    "images": [
+      {
+        "src": "macosx10.4/1.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Mac OS X 10.5 Leopard",
+    "brand": "apple",
+    "date": "August 7, 2006",
+    "description": "Mac OS X 10.5, codenamed Leopard, was first previewed at WWDC on August 7, 2006, though its release was delayed and it didn't arrive until October 26, 2007. It introduced Time Machine for automatic backups, Spaces for virtual desktops, and a redesigned Finder. Leopard was also the first version to run natively on both PowerPC and Intel Macs.",
+    "images": [
+      {
+        "src": "macosx10.5/1.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Mac OS X 10.5 Leopard Server",
+    "brand": "apple",
+    "date": "August 7, 2006",
+    "description": "Mac OS X 10.5 Server, the server edition of Leopard, was previewed alongside the standard version at WWDC on August 7, 2006, before both arrived on October 26, 2007. It shared the same visual design and wallpaper as its desktop counterpart while adding tools for managing networks, file sharing, and collaborative services. It was aimed at businesses, schools, and organizations running Apple hardware.",
+    "images": [
+      {
+        "src": "macosx10.5server/1.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Mac OS X 10.6 Snow Leopard",
+    "brand": "apple",
+    "date": "June 9, 2008",
+    "description": "Mac OS X 10.6, codenamed Snow Leopard, was announced at WWDC on June 9, 2008, more than a year before it arrived on August 28, 2009. Unlike most releases, it focused on refinement rather than new features, with Apple rewriting much of the operating system's core for better performance, stability, and a smaller storage footprint. It was also the first version sold exclusively as a digital download alongside physical media.",
+    "images": [
+      {
+        "src": "macosx10.6/1.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "macosx10.6/2.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Mac OS X 10.7 Lion",
+    "brand": "apple",
+    "date": "October 20, 2010",
+    "description": "Mac OS X 10.7, codenamed Lion, was first previewed at Apple's \"Back to the Mac\" event on October 20, 2010, ahead of its release on July 20, 2011. It brought multi-touch gestures and iOS-inspired design elements to the Mac, introducing Launchpad, Mission Control, and full-screen apps, along with the Mac App Store as a built-in distribution platform. Lion marked Apple's shift toward blending Mac and iOS interaction patterns.",
+    "images": [
+      {
+        "src": "macosx10.7/1.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "OS X 10.8 Mountain Lion",
+    "brand": "apple",
+    "date": "February 16, 2012",
+    "description": "OS X 10.8, codenamed Mountain Lion, was first announced on February 16, 2012, ahead of a public release on July 25, 2012 — an unusual move for Apple, which otherwise revealed most macOS updates at WWDC. It deepened iCloud integration and brought iOS-style apps like Notes, Reminders, and Messages to the Mac. Notification Center also made its debut in this release.",
+    "images": [
+      {
+        "src": "osx10.8/1.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "OS X 10.9 Mavericks",
+    "brand": "apple",
+    "date": "June 10, 2013",
+    "description": "OS X 10.9, codenamed Mavericks, was unveiled on June 10, 2013, at WWDC, ahead of its public release on October 22, 2013. It was the first Mac operating system named after a California landmark rather than a big cat, and the first major macOS update offered as a free download. Mavericks focused on battery efficiency with features like App Nap and Timer Coalescing.",
+    "images": [
+      {
+        "src": "osx10.9/1.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "OS X 10.10 Yosemite",
+    "brand": "apple",
+    "date": "June 2, 2014",
+    "description": "OS X 10.10, codenamed Yosemite, was unveiled on June 2, 2014, at WWDC, with a complete visual overhaul that replaced skeuomorphic design with a flatter, more modern look. It introduced Continuity features like Handoff, allowing tasks to move seamlessly between Mac and iOS devices. It arrived publicly on October 16, 2014, and its redesign set the visual direction for macOS for years to come.",
+    "images": [
+      {
+        "src": "osx10.10/2.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "OS X 10.11 El Capitan",
+    "brand": "apple",
+    "date": "June 8, 2015",
+    "description": "OS X 10.11, codenamed El Capitan, was unveiled on June 8, 2015, at WWDC, with an emphasis on performance and stability rather than visual changes. It introduced Split View for using two apps side by side and refined Spotlight and Mission Control. It was released publicly on September 30, 2015, and is often remembered as one of the most dependable macOS releases.",
+    "images": [
+      {
+        "src": "osx10.11/1.png",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "macOS 10.12 Sierra",
+    "brand": "apple",
+    "date": "June 13, 2016",
+    "description": "macOS 10.12, codenamed Sierra, was announced at WWDC on June 13, 2016, ahead of its release that September. It was the first release to carry the \"macOS\" name, dropping \"OS X\" to align with the branding of iOS, watchOS, and tvOS. Sierra introduced Siri on the Mac for the first time, along with Universal Clipboard and Optimized Storage.",
+    "images": [
+      {
+        "src": "macos10.12/1.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "macOS 10.13 High Sierra",
+    "brand": "apple",
+    "date": "June 5, 2017",
+    "description": "macOS 10.13, codenamed High Sierra, was announced at WWDC on June 5, 2017, and released that September. As its name suggests, it focused on refining its predecessor rather than a visual overhaul, quietly switching the Mac's storage format to APFS and adopting Metal 2 for graphics performance. Most of its improvements happened under the hood rather than on the surface.",
+    "images": [
+      {
+        "src": "macos10.13/1.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "macOS 10.14 Mojave",
+    "brand": "apple",
+    "date": "June 4, 2018",
+    "description": "macOS 10.14, codenamed Mojave, was announced at WWDC on June 4, 2018, and released that September. It introduced a system-wide Dark Mode along with Dynamic Desktop, a wallpaper feature that shifts throughout the day to match the time. Mojave also brought several iOS apps, including News, Stocks, and Home, to the Mac for the first time.",
+    "images": [
+      {
+        "src": "macos10.14/1.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "macos10.14/2.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "macOS 10.15 Catalina",
+    "brand": "apple",
+    "date": "June 3, 2019",
+    "description": "macOS 10.15, codenamed Catalina, was announced at WWDC on June 3, 2019, and released that October. It replaced iTunes with three separate apps: Music, Podcasts, and TV, and introduced Sidecar, which lets an iPad function as a wireless second display. Catalina was also the last version of macOS to support 32-bit applications.",
+    "images": [
+      {
+        "src": "macos10.15/1.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "macos10.15/2.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "macOS 11 Big Sur",
+    "brand": "apple",
+    "date": "June 22, 2020",
+    "description": "macOS 11, codenamed Big Sur, was announced at WWDC on June 22, 2020, and released that November. It marked the biggest visual redesign since Yosemite, and its jump from version 10.15 straight to 11 reflected just how significant Apple considered the update. Big Sur was also the first version of macOS built to run natively on Apple's own M1 Apple Silicon chips.",
+    "images": [
+      {
+        "src": "macos11/1.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "macos11/2.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "macos11/3.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "macos11/4.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "macOS 12 Monterey",
+    "brand": "apple",
+    "date": "June 7, 2021",
+    "description": "macOS 12, codenamed Monterey, was announced at WWDC on June 7, 2021, and released that October. It introduced Universal Control, letting a single keyboard and mouse move seamlessly between a Mac and a nearby iPad, along with the Shortcuts app arriving on the Mac for the first time. FaceTime also gained SharePlay for watching and listening together during calls.",
+    "images": [
+      {
+        "src": "macos12/1.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "macos12/2.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "macOS 13 Ventura",
+    "brand": "apple",
+    "date": "June 6, 2022",
+    "description": "macOS 13, codenamed Ventura, was announced at WWDC on June 6, 2022, and released that October. It introduced Stage Manager for organizing windows and apps, along with Continuity Camera, which lets an iPhone act as a high-quality webcam. Ventura also replaced the long-standing System Preferences app with a redesigned System Settings.",
+    "images": [
+      {
+        "src": "macos13/1.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "macos13/2.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "macOS 14 Sonoma",
+    "brand": "apple",
+    "date": "June 5, 2023",
+    "description": "macOS 14, codenamed Sonoma, was announced at WWDC on June 5, 2023, and released that September. It introduced interactive desktop widgets that could be placed directly on the desktop, along with Presenter Overlay for appearing over shared content during video calls. Sonoma also added a set of new screen savers featuring sweeping aerial landscapes.",
+    "images": [
+      {
+        "src": "macos14/1.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "macos14/2.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "macos14/3.png",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "macOS 15 Sequoia",
+    "brand": "apple",
+    "date": "June 10, 2024",
+    "description": "macOS 15, codenamed Sequoia, was announced at WWDC on June 10, 2024, and released that September. It introduced iPhone Mirroring, allowing an iPhone to be viewed and controlled directly from a Mac, along with improved window tiling. Sequoia also deepened integration with Apple Intelligence, Apple's suite of AI-powered features.",
+    "images": [
+      {
+        "src": "macos15/1.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "macos15/2.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "macos15/3.png",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "macOS 26 Tahoe",
+    "brand": "apple",
+    "date": "June 9, 2025",
+    "description": "macOS 26, codenamed Tahoe, was announced at WWDC on June 9, 2025, and released that September, marking Apple's switch to year-based version numbers across all its platforms. It introduced the Liquid Glass design language, featuring translucent, color-customizable interface elements, along with a significantly upgraded Spotlight search. Tahoe was also the last version of macOS to support Intel-based Macs.",
+    "images": [
+      {
+        "src": "macos26/1.png",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "macos26/2.png",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "macos26/3.png",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "macos26/4.png",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "macos26/5.png",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "macos26/6.png",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "macOS 27 Golden Gate",
+    "brand": "apple",
+    "date": "June 8, 2026",
+    "description": "macOS 27, codenamed Golden Gate, was announced at WWDC on June 8, 2026, ahead of its release that fall. Named after the strait connecting San Francisco Bay to the Pacific, it is the first version of macOS to drop support for Intel Macs entirely, running exclusively on Apple Silicon. Golden Gate brings AI-powered features more broadly across the system.",
+    "images": [
+      {
+        "src": "macos27/1.png",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "macos27/2.png",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      },
+      {
+        "src": "macos27/3.jpg",
+        "devices": [
+          "phone",
+          "desktop"
+        ]
+      }
+    ]
   }
 ]

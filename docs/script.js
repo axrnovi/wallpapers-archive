@@ -1,5 +1,10 @@
 let wallpaperData = [];
-let currentFilter = 'all';
+const urlBrandParam = new URLSearchParams(window.location.search).get('brand');
+let currentFilter = urlBrandParam || sessionStorage.getItem('brandFilter') || 'all';
+if (urlBrandParam) {
+  sessionStorage.setItem('brandFilter', urlBrandParam);
+}
+let currentDeviceFilter = sessionStorage.getItem('deviceFilter') || 'all';
 let searchQuery = '';
 
 const DESKTOP_BREAKPOINT = 768;
@@ -35,11 +40,25 @@ function slugify(title) {
     .replace(/^-|-$/g, '');
 }
 
-function getPreviewImages(item) {
+function getImageSrc(image) {
+  return typeof image === 'object' ? image.src : image;
+}
+
+function getImageDevices(image) {
+  if (typeof image === 'object' && Array.isArray(image.devices)) return image.devices;
+  return ['phone'];
+}
+
+function getPreviewImages(item, deviceFilter) {
   if (item.previews && item.previews.length > 0) {
     return item.previews.map(resolveUrl);
   }
-  return (item.images || []).slice(0, 3).map(resolveUrl);
+  let images = item.images || [];
+  if (deviceFilter === 'phone' || deviceFilter === 'desktop') {
+    const filtered = images.filter((img) => getImageDevices(img).includes(deviceFilter));
+    if (filtered.length > 0) images = filtered;
+  }
+  return images.slice(0, 3).map(getImageSrc).map(resolveUrl);
 }
 
 function renderLoadingState() {
@@ -81,12 +100,21 @@ async function loadWallpaperData() {
     const response = await fetch('wallpapers.json');
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     wallpaperData = await response.json();
+    renderCollectionStats();
     renderFilters();
     renderGrid();
   } catch (error) {
     console.error("Error loading wallpaper database:", error);
     renderErrorState();
   }
+}
+
+function renderCollectionStats() {
+  const statsEl = document.getElementById('collectionStats');
+  if (!statsEl) return;
+  const totalCollections = wallpaperData.length;
+  const totalImages = wallpaperData.reduce((sum, item) => sum + (item.images ? item.images.length : 0), 0);
+  statsEl.textContent = `${totalImages.toLocaleString('en-US')} wallpapers · ${totalCollections} collections`;
 }
 
 function retryLoad() {
@@ -110,14 +138,14 @@ function renderFilters() {
   filterContainer.innerHTML = '';
 
   const allBtn = document.createElement('button');
-  allBtn.className = 'filter-btn active';
+  allBtn.className = currentFilter === 'all' ? 'filter-btn active' : 'filter-btn';
   allBtn.textContent = 'All';
   allBtn.onclick = () => filterBrand('all', allBtn);
   filterContainer.appendChild(allBtn);
 
   presentBrands.forEach((brand) => {
     const btn = document.createElement('button');
-    btn.className = 'filter-btn';
+    btn.className = brand === currentFilter ? 'filter-btn active' : 'filter-btn';
     btn.textContent = getBrandLabel(brand);
     btn.onclick = () => filterBrand(brand, btn);
     filterContainer.appendChild(btn);
@@ -151,13 +179,29 @@ function itemMatchesSearch(item, query) {
   return queryWords.every((word) => haystack.includes(word));
 }
 
+function itemMatchesDevice(item, device) {
+  if (device === 'all') return true;
+  if (!item.images || item.images.length === 0) return true;
+  const hasDeviceInfo = item.images.some((img) => typeof img === 'object' && img.devices);
+  if (!hasDeviceInfo) return true;
+  return item.images.some((img) => typeof img === 'object' && Array.isArray(img.devices) && img.devices.includes(device));
+}
+
+function parseDateSafe(dateStr) {
+  const t = Date.parse(dateStr);
+  return isNaN(t) ? 0 : t;
+}
+
 function getFilteredData() {
-  return wallpaperData.filter((item) => {
-    if (searchQuery) {
-      return itemMatchesSearch(item, searchQuery);
-    }
-    return currentFilter === 'all' || item.brand === currentFilter;
-  });
+  return wallpaperData
+    .filter((item) => {
+      if (!itemMatchesDevice(item, currentDeviceFilter)) return false;
+      if (searchQuery) {
+        return itemMatchesSearch(item, searchQuery);
+      }
+      return currentFilter === 'all' || item.brand === currentFilter;
+    })
+    .sort((a, b) => parseDateSafe(b.date) - parseDateSafe(a.date));
 }
 
 function createWallpaperCard(item) {
@@ -165,7 +209,7 @@ function createWallpaperCard(item) {
   card.className = 'wallpaper-card';
   card.href = `collections/${slugify(item.title)}.html`;
 
-  const previewImages = getPreviewImages(item);
+  const previewImages = getPreviewImages(item, currentDeviceFilter);
   let mediaHtml = '<div class="card-media-wrapper">';
 
   if (previewImages.length > 1) {
@@ -205,6 +249,7 @@ function clearActiveSliderIntervals() {
 
 function renderGrid() {
   const grid = document.getElementById('wallpaperGrid');
+  grid.classList.toggle('desktop-mode', currentDeviceFilter === 'desktop');
   clearActiveSliderIntervals();
   grid.innerHTML = '';
 
@@ -313,8 +358,20 @@ function initSliders() {
   document.querySelectorAll('.card-slider').forEach(s => sliderObserver.observe(s));
 }
 
+function filterDevice(device, btnEl) {
+  currentDeviceFilter = device;
+  sessionStorage.setItem('deviceFilter', device);
+  visibleCount = PAGE_SIZE;
+  document.querySelectorAll('.device-btn').forEach(btn => btn.classList.remove('active'));
+  if (btnEl) {
+    btnEl.classList.add('active');
+  }
+  renderGrid();
+}
+
 function filterBrand(brand, btnEl) {
   currentFilter = brand;
+  sessionStorage.setItem('brandFilter', brand);
   visibleCount = PAGE_SIZE;
   document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
   if (btnEl) {
@@ -397,6 +454,24 @@ function handleSearchInput(value) {
   renderGrid();
 }
 
+function restoreDeviceFilterUI() {
+  document.querySelectorAll('.device-btn').forEach((btn) => {
+    btn.classList.toggle('active', btn.dataset.device === currentDeviceFilter);
+    btn.style.transition = '';
+  });
+}
+
+document.addEventListener('keydown', (e) => {
+  if (e.key !== '/') return;
+  const tag = document.activeElement ? document.activeElement.tagName : '';
+  if (tag === 'INPUT' || tag === 'TEXTAREA') return;
+  const searchInput = document.getElementById('searchInput');
+  if (!searchInput) return;
+  e.preventDefault();
+  searchInput.focus();
+});
+
+document.addEventListener("DOMContentLoaded", restoreDeviceFilterUI);
 document.addEventListener("DOMContentLoaded", loadWallpaperData);
 
 document.addEventListener('touchstart', function () {}, { passive: true });
