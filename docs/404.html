@@ -8,7 +8,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet"></noscript>
 
   <meta name="robots" content="noindex">
 
@@ -24,14 +26,14 @@
 </head>
 <body>
 
-<div class="archive-wrapper">
+<main class="archive-wrapper">
   <div class="modal-inner not-found-block">
     <img src="pix/icons/swaicon.svg" alt="" class="not-found-icon" aria-hidden="true">
     <h1 class="not-found-code">404</h1>
     <p class="not-found-text">This page doesn't exist — maybe the link was mistyped, or the wallpaper got moved.</p>
     <a href="index.html" class="btn about-btn">Back to Home</a>
   </div>
-</div>
+</main>
 
 </body>
 </html>
