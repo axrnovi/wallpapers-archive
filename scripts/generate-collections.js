@@ -46,6 +46,13 @@ function parseDateSafe(dateStr) {
   return isNaN(t) ? 0 : t;
 }
 
+function getSortPriority(title) {
+  if (title.startsWith('iOS ')) return 0;
+  if (title.startsWith('iPadOS ')) return 1;
+  if (title.startsWith('macOS ') || title.startsWith('Mac OS X ') || title.startsWith('OS X ')) return 2;
+  return 3;
+}
+
 function getSimilarItems(item, allData, limit) {
   if (!item.brand) return [];
   const targetTime = parseDateSafe(item.date);
@@ -59,16 +66,18 @@ function renderSimilarCard(other) {
   const slug = slugify(other.title);
   const brandLabel = getBrandLabel(other.brand);
   const firstImage = (other.images && other.images[0]) ? resolveUrl(getImageSrc(other.images[0])) : '';
+  const imageCount = (other.images || []).length;
+  const blurSrc = escapeHtml(optimizedUrl(firstImage, 24));
+  const fullSrc = escapeHtml(optimizedUrl(firstImage, 750));
   return `
         <a href="${slug}.html" class="wallpaper-card">
           <div class="card-media-wrapper">
-            <img src="${escapeHtml(optimizedUrl(firstImage, 24))}" class="card-preview-blur" aria-hidden="true">
-            <img src="${escapeHtml(optimizedUrl(firstImage, 750))}" class="card-preview-img" loading="lazy" decoding="async" alt="${escapeHtml(other.title)} wallpaper preview" onload="this.classList.add('loaded')">
+            <img src="${blurSrc}" class="card-preview-blur" aria-hidden="true">
+            <img src="${fullSrc}" class="card-preview-img" loading="lazy" decoding="async" alt="${escapeHtml(other.title)} wallpaper preview" onload="this.classList.add('loaded')">
             <span class="badge">${escapeHtml(brandLabel)}</span>
+            ${imageCount > 0 ? `<span class="count-badge">${COUNT_ICON_SVG}${imageCount}</span>` : ''}
           </div>
-          <div class="card-info">
-            <h3 class="card-title">${escapeHtml(other.title)}</h3>
-          </div>
+          <h3 class="card-title">${escapeHtml(other.title)}</h3>
         </a>`;
 }
 
@@ -82,11 +91,11 @@ function renderImageCard(item, title, image, index, variant) {
   const imgUrl = resolveUrl(relativePath);
   const ext = relativePath.includes('.') ? relativePath.split('.').pop() : 'jpg';
   const filename = `${item.title}-${index + 1}.${ext}`;
-  const cls = variant === 'desktop' ? 'modal-item-wrapper desktop-item' : 'modal-item-wrapper';
+  const cls = variant === 'desktop' ? 'modal-item-wrapper desktop-item' : variant === 'tablet' ? 'modal-item-wrapper tablet-item' : 'modal-item-wrapper';
   return `
         <div class="${cls}">
           <img src="${escapeHtml(optimizedUrl(imgUrl, 24))}" class="modal-item-blur" aria-hidden="true">
-          <img src="${escapeHtml(optimizedUrl(imgUrl, 750))}" class="modal-item-img" alt="${title}" loading="lazy" decoding="async" onload="this.classList.add('loaded')">
+          <img data-src="${escapeHtml(optimizedUrl(imgUrl, 750))}" class="modal-item-img" alt="${title}" decoding="async">
           <button type="button" class="download-single-btn" data-url="${escapeHtml(imgUrl)}" data-filename="${escapeHtml(filename)}">
             <svg class="download-icon-arrow" viewBox="0 0 34 33" fill="none" aria-hidden="true"><path d="M32.5 29.5C33.3284 29.5 34 30.1716 34 31C33.9999 31.8284 33.3284 32.5 32.5 32.5H1.5C0.67161 32.5 6.08143e-05 31.8284 0 31C0 30.1716 0.671573 29.5 1.5 29.5H32.5ZM16.999 0C17.8275 0 18.499 0.671573 18.499 1.5V21.3789L25.4844 14.3936C26.0701 13.8078 27.0197 13.8078 27.6055 14.3936C28.1913 14.9793 28.1913 15.9289 27.6055 16.5146L18.0596 26.0605C17.4738 26.6463 16.5242 26.6463 15.9385 26.0605L6.39258 16.5146C5.80687 15.9289 5.80687 14.9793 6.39258 14.3936C6.97835 13.8078 7.92788 13.8078 8.51367 14.3936L15.499 21.3789V1.5C15.499 0.67161 16.1706 6.08143e-05 16.999 0Z" fill="currentColor"/></svg>
             <svg class="download-icon-spinner" viewBox="0 0 34 34" fill="none" aria-hidden="true"><path d="M9.22204 28.641C11.5243 30.1793 14.2314 31.0004 17.0004 31.0004L18.5002 31.0002C19.3287 31.0002 20.0004 31.6718 20.0004 32.5003C20.0004 33.3288 19.3288 34.0004 18.5003 34.0004H17.0004C13.6381 34.0004 10.3516 33.003 7.55602 31.1351C4.76044 29.2672 2.581 26.6125 1.2943 23.5062C0.00764072 20.3999 -0.329362 16.9816 0.326529 13.684C0.982478 10.3863 2.60236 7.35734 4.97985 4.97985C7.35734 2.60236 10.3863 0.982478 13.684 0.326529C16.9816 -0.329362 20.3999 0.00764048 23.5062 1.2943C26.6125 2.581 29.2672 4.76044 31.1351 7.55602C33.003 10.3516 34.0004 13.6381 34.0004 17.0004V18.5003C34.0004 19.3288 33.3288 20.0004 32.5003 20.0004C31.6718 20.0004 31.0002 19.3287 31.0002 18.5002L31.0004 17.0004C31.0004 14.4045 30.279 11.8631 28.9213 9.65856L28.641 9.22204C27.1026 6.91985 24.9159 5.12538 22.3578 4.06579C19.7997 3.00623 16.9846 2.72873 14.2689 3.26891C11.5532 3.80912 9.05886 5.14303 7.10094 7.10094L6.74157 7.47399C4.97966 9.37132 3.77538 11.7228 3.26891 14.2689C2.72873 16.9846 3.00623 19.7997 4.06579 22.3578C5.12538 24.9159 6.91985 27.1026 9.22204 28.641Z" fill="currentColor"/></svg>
@@ -103,61 +112,61 @@ function renderCollectionPage(item, slug, allData) {
   const pageUrl = `${SITE_URL}/collections/${slug}.html`;
 
   const allImages = item.images || [];
-  const phoneImages = allImages.filter((img) => getImageDevices(img).includes('phone'));
-  const desktopImages = allImages.filter((img) => getImageDevices(img).includes('desktop'));
-  const hasBothSections = phoneImages.length > 0 && desktopImages.length > 0;
 
-  const phoneItemsHtml = phoneImages.map((img, i) => renderImageCard(item, title, img, i, 'phone')).join('');
-  const desktopItemsHtml = desktopImages.map((img, i) => renderImageCard(item, title, img, i, 'desktop')).join('');
+  const PHONE_ICON = '<svg class="device-section-icon" viewBox="0 0 28 46" fill="none" aria-hidden="true"><path d="M18.5996 0C19.6702 0 20.6542 -0.00233922 21.4717 0.0644531C22.2175 0.125401 23.0249 0.254767 23.832 0.600586L24.1777 0.762695L24.4219 0.893555C25.6273 1.56901 26.6081 2.58745 27.2373 3.82227C27.7066 4.74334 27.8659 5.67592 27.9355 6.52832C28.0023 7.34583 28 8.32979 28 9.40039V36.5996C28 37.6702 28.0023 38.6542 27.9355 39.4717C27.8659 40.3241 27.7066 41.2567 27.2373 42.1777C26.5662 43.4949 25.4949 44.5662 24.1777 45.2373C23.2567 45.7066 22.3241 45.8659 21.4717 45.9355C20.6542 46.0023 19.6702 46 18.5996 46H9.40039C8.32979 46 7.34583 46.0023 6.52832 45.9355C5.67592 45.8659 4.74333 45.7066 3.82227 45.2373C2.50514 44.5662 1.43381 43.4949 0.762695 42.1777C0.29345 41.2567 0.134109 40.3241 0.0644531 39.4717C-0.00233906 38.6542 0 37.6702 0 36.5996V9.40039C-1.52855e-08 8.32979 -0.00233986 7.34583 0.0644531 6.52832C0.13411 5.67592 0.293447 4.74334 0.762695 3.82227L0.893555 3.57812C1.56901 2.37273 2.58745 1.39187 3.82227 0.762695L4.16797 0.600586C4.97515 0.254765 5.78248 0.125402 6.52832 0.0644531C7.34583 -0.00233986 8.32979 -1.52856e-08 9.40039 0H18.5996ZM7.91602 3.00684C6.61608 3.02728 5.82525 3.10861 5.18359 3.43555C4.43109 3.81902 3.81902 4.43109 3.43555 5.18359C2.99957 6.03924 3 7.16019 3 9.40039V36.5996C3 38.8398 2.99958 39.9608 3.43555 40.8164C3.81901 41.5689 4.43109 42.181 5.18359 42.5645C5.82525 42.8914 6.61608 42.9727 7.91602 42.9932L9.40039 43H18.5996C20.6999 43 21.816 42.9999 22.6523 42.6406L22.8164 42.5645C23.4749 42.2289 24.0259 41.7183 24.4102 41.0918L24.5645 40.8164C25.0004 39.9608 25 38.8398 25 36.5996V9.40039C25 7.30007 24.9999 6.18397 24.6406 5.34766L24.5645 5.18359C24.181 4.43109 23.5689 3.81901 22.8164 3.43555C21.9608 2.99958 20.8398 3 18.5996 3H9.40039L7.91602 3.00684ZM17 40C17.5523 40 18 40.4477 18 41C18 41.5523 17.5523 42 17 42H11C10.4477 42 10 41.5523 10 41C10 40.4477 10.4477 40 11 40H17ZM16.5 5C17.3284 5 18 5.67157 18 6.5C18 7.32843 17.3284 8 16.5 8H11.5C10.6716 8 10 7.32843 10 6.5C10 5.67157 10.6716 5 11.5 5H16.5Z" fill="currentColor"/></svg>';
+  const DESKTOP_ICON = '<svg class="device-section-icon" viewBox="0 0 46 43" fill="none" aria-hidden="true"><path d="M36.5996 0C37.6702 0 38.6542 -0.00233906 39.4717 0.0644531C40.2175 0.125401 41.0249 0.254768 41.832 0.600586L42.1777 0.762695L42.4219 0.893555C43.6273 1.569 44.6081 2.58745 45.2373 3.82227C45.7066 4.74333 45.8659 5.67592 45.9355 6.52832C46.0023 7.34583 46 8.32979 46 9.40039V25.5996C46 26.6702 46.0023 27.6542 45.9355 28.4717C45.8659 29.3241 45.7066 30.2567 45.2373 31.1777C44.5662 32.4949 43.4949 33.5662 42.1777 34.2373C41.2567 34.7066 40.3241 34.8659 39.4717 34.9355C38.6542 35.0023 37.6702 35 36.5996 35H29V40H30.5C31.3284 40 32 40.6716 32 41.5C32 42.3284 31.3284 43 30.5 43H15.5C14.6716 43 14 42.3284 14 41.5C14 40.6716 14.6716 40 15.5 40H17V35H9.40039C8.32979 35 7.34583 35.0023 6.52832 34.9355C5.67592 34.8659 4.74333 34.7066 3.82227 34.2373C2.50514 33.5662 1.43381 32.4949 0.762695 31.1777C0.29345 30.2567 0.134109 29.3241 0.0644531 28.4717C-0.00233922 27.6542 0 26.6702 0 25.5996V9.40039C-1.52855e-08 8.32979 -0.00233986 7.34583 0.0644531 6.52832C0.13411 5.67592 0.293447 4.74334 0.762695 3.82227L0.893555 3.57812C1.56901 2.37273 2.58745 1.39187 3.82227 0.762695L4.16797 0.600586C4.97515 0.254765 5.78248 0.125402 6.52832 0.0644531C7.34583 -0.00233986 8.32979 -1.52856e-08 9.40039 0H36.5996ZM20 40H26V35H20V40ZM7.91602 3.00684C6.61608 3.02728 5.82525 3.10861 5.18359 3.43555C4.43109 3.81902 3.81902 4.43109 3.43555 5.18359C2.99957 6.03924 3 7.16019 3 9.40039V25.5996C3 27.8398 2.99958 28.9608 3.43555 29.8164C3.81901 30.5689 4.43109 31.181 5.18359 31.5645C5.82525 31.8914 6.61608 31.9727 7.91602 31.9932L9.40039 32H36.5996C38.6999 32 39.816 31.9999 40.6523 31.6406L40.8164 31.5645C41.4749 31.2289 42.0259 30.7183 42.4102 30.0918L42.5645 29.8164C43.0004 28.9608 43 27.8398 43 25.5996V9.40039C43 7.30007 42.9999 6.18397 42.6406 5.34766L42.5645 5.18359C42.181 4.43109 41.5689 3.81901 40.8164 3.43555C39.9608 2.99958 38.8398 3 36.5996 3H9.40039L7.91602 3.00684Z" fill="currentColor"/></svg>';
+  const TABLET_ICON = '<svg class="device-section-icon" viewBox="0 0 35 46" fill="none" aria-hidden="true"><path d="M31.9932 7.91603C31.9727 6.6161 31.8914 5.82526 31.5645 5.1836C31.181 4.43111 30.5689 3.81902 29.8164 3.43556C28.9608 2.9996 27.8398 3.00001 25.5996 3.00001H9.4004C7.1602 3.00001 6.03925 2.99958 5.1836 3.43556C4.4311 3.81902 3.81902 4.4311 3.43556 5.1836C3.10862 5.82526 3.0273 6.61609 3.00685 7.91603L3.00001 9.4004V36.5996C3.00001 38.6999 3.0001 39.816 3.35939 40.6524L3.43556 40.8164C3.7711 41.4749 4.28172 42.0259 4.90821 42.4102L5.1836 42.5645C6.03925 43.0004 7.1602 43 9.4004 43H25.5996C27.6999 43 28.816 42.9999 29.6524 42.6406L29.8164 42.5645C30.5689 42.181 31.181 41.5689 31.5645 40.8164C32.0004 39.9608 32 38.8398 32 36.5996V9.4004L31.9932 7.91603ZM24 40C24.5523 40 25 40.4477 25 41C25 41.5523 24.5523 42 24 42H12C11.4477 42 11 41.5523 11 41C11 40.4477 11.4477 40 12 40H24ZM35 36.5996C35 37.6702 35.0023 38.6542 34.9356 39.4717C34.8746 40.2175 34.7452 41.0249 34.3994 41.832L34.2373 42.1777L34.1065 42.4219C33.431 43.6273 32.4126 44.6081 31.1777 45.2373C30.2567 45.7066 29.3241 45.8659 28.4717 45.9356C27.6542 46.0024 26.6702 46 25.5996 46H9.4004C8.32981 46 7.34583 46.0024 6.52833 45.9356C5.67594 45.8659 4.74334 45.7066 3.82228 45.2373C2.50515 44.5662 1.43382 43.4949 0.762705 42.1777C0.293464 41.2567 0.134119 40.3241 0.0644632 39.4717C-0.00233025 38.6542 1.00596e-05 37.6702 1.00596e-05 36.5996V9.4004C1.00296e-05 8.32981 -0.00233174 7.34583 0.0644632 6.52833C0.13412 5.67594 0.293458 4.74334 0.762705 3.82228C1.43382 2.50515 2.50515 1.43382 3.82228 0.762705C4.74334 0.293459 5.67594 0.13412 6.52833 0.0644632C7.34583 -0.00232961 8.32981 1.00032e-05 9.4004 1.00337e-05H25.5996C26.6702 1.00337e-05 27.6542 -0.00232821 28.4717 0.0644632C29.3241 0.134119 30.2567 0.293465 31.1777 0.762705L31.4219 0.893565C32.6273 1.56901 33.6081 2.58746 34.2373 3.82228L34.3994 4.16798C34.7452 4.97515 34.8746 5.7825 34.9356 6.52833C35.0023 7.34583 35 8.32981 35 9.4004V36.5996Z" fill="currentColor"/></svg>';
 
-  let itemsHtml;
-  if (hasBothSections) {
+  const deviceTypes = [
+    { key: 'phone', label: 'For Smartphones', id: 'phone-section', gridClass: '', icon: PHONE_ICON },
+    { key: 'tablet', label: 'For Tablets', id: 'tablet-section', gridClass: 'tablet-grid', icon: TABLET_ICON },
+    { key: 'desktop', label: 'For Desktops', id: 'desktop-section', gridClass: 'desktop-grid', icon: DESKTOP_ICON },
+  ];
+
+  const sections = deviceTypes.map((dt) => {
+    const images = allImages.filter((img) => getImageDevices(img).includes(dt.key));
+    const itemsHtmlPart = images.map((img, i) => renderImageCard(item, title, img, i, dt.key)).join('');
+    return { ...dt, images, itemsHtmlPart };
+  }).filter((s) => s.images.length > 0);
+
+  let itemsHtml = '';
+  if (sections.length === 1) {
+    const s = sections[0];
     itemsHtml = `
-    <div class="device-section-header" onclick="toggleDeviceSection('phone-section')">
-      <svg class="device-section-icon" viewBox="0 0 28 46" fill="none" aria-hidden="true"><path d="M18.5996 0C19.6702 0 20.6542 -0.00233922 21.4717 0.0644531C22.2175 0.125401 23.0249 0.254767 23.832 0.600586L24.1777 0.762695L24.4219 0.893555C25.6273 1.56901 26.6081 2.58745 27.2373 3.82227C27.7066 4.74334 27.8659 5.67592 27.9355 6.52832C28.0023 7.34583 28 8.32979 28 9.40039V36.5996C28 37.6702 28.0023 38.6542 27.9355 39.4717C27.8659 40.3241 27.7066 41.2567 27.2373 42.1777C26.5662 43.4949 25.4949 44.5662 24.1777 45.2373C23.2567 45.7066 22.3241 45.8659 21.4717 45.9355C20.6542 46.0023 19.6702 46 18.5996 46H9.40039C8.32979 46 7.34583 46.0023 6.52832 45.9355C5.67592 45.8659 4.74333 45.7066 3.82227 45.2373C2.50514 44.5662 1.43381 43.4949 0.762695 42.1777C0.29345 41.2567 0.134109 40.3241 0.0644531 39.4717C-0.00233906 38.6542 0 37.6702 0 36.5996V9.40039C-1.52855e-08 8.32979 -0.00233986 7.34583 0.0644531 6.52832C0.13411 5.67592 0.293447 4.74334 0.762695 3.82227L0.893555 3.57812C1.56901 2.37273 2.58745 1.39187 3.82227 0.762695L4.16797 0.600586C4.97515 0.254765 5.78248 0.125402 6.52832 0.0644531C7.34583 -0.00233986 8.32979 -1.52856e-08 9.40039 0H18.5996ZM7.91602 3.00684C6.61608 3.02728 5.82525 3.10861 5.18359 3.43555C4.43109 3.81902 3.81902 4.43109 3.43555 5.18359C2.99957 6.03924 3 7.16019 3 9.40039V36.5996C3 38.8398 2.99958 39.9608 3.43555 40.8164C3.81901 41.5689 4.43109 42.181 5.18359 42.5645C5.82525 42.8914 6.61608 42.9727 7.91602 42.9932L9.40039 43H18.5996C20.6999 43 21.816 42.9999 22.6523 42.6406L22.8164 42.5645C23.4749 42.2289 24.0259 41.7183 24.4102 41.0918L24.5645 40.8164C25.0004 39.9608 25 38.8398 25 36.5996V9.40039C25 7.30007 24.9999 6.18397 24.6406 5.34766L24.5645 5.18359C24.181 4.43109 23.5689 3.81901 22.8164 3.43555C21.9608 2.99958 20.8398 3 18.5996 3H9.40039L7.91602 3.00684ZM17 40C17.5523 40 18 40.4477 18 41C18 41.5523 17.5523 42 17 42H11C10.4477 42 10 41.5523 10 41C10 40.4477 10.4477 40 11 40H17ZM16.5 5C17.3284 5 18 5.67157 18 6.5C18 7.32843 17.3284 8 16.5 8H11.5C10.6716 8 10 7.32843 10 6.5C10 5.67157 10.6716 5 11.5 5H16.5Z" fill="currentColor"/></svg>
-      <span>For Smartphones</span>
-      <svg id="chev-phone-section" class="device-section-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    <div class="device-section-header static">
+      ${s.icon}
+      <span>${s.label}</span>
     </div>
-    <div class="device-section-body" id="phone-section">
+    <div class="modal-grid ${s.gridClass}">${s.itemsHtmlPart}</div>`;
+  } else if (sections.length > 1) {
+    const sectionsMarkup = sections.map((s, idx) => `
+    <div class="device-section-header" onclick="toggleDeviceSection('${s.id}')">
+      ${s.icon}
+      <span>${s.label}</span>
+      <svg id="chev-${s.id}" class="device-section-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    </div>
+    <div class="device-section-body" id="${s.id}">
       <div class="device-section-inner">
-        <div class="modal-grid">${phoneItemsHtml}</div>
+        <div class="modal-grid ${s.gridClass}">${s.itemsHtmlPart}</div>
       </div>
-    </div>
-    <div class="device-section-divider"></div>
-    <div class="device-section-header" onclick="toggleDeviceSection('desktop-section')">
-      <svg class="device-section-icon" viewBox="0 0 46 43" fill="none" aria-hidden="true"><path d="M36.5996 0C37.6702 0 38.6542 -0.00233906 39.4717 0.0644531C40.2175 0.125401 41.0249 0.254768 41.832 0.600586L42.1777 0.762695L42.4219 0.893555C43.6273 1.569 44.6081 2.58745 45.2373 3.82227C45.7066 4.74333 45.8659 5.67592 45.9355 6.52832C46.0023 7.34583 46 8.32979 46 9.40039V25.5996C46 26.6702 46.0023 27.6542 45.9355 28.4717C45.8659 29.3241 45.7066 30.2567 45.2373 31.1777C44.5662 32.4949 43.4949 33.5662 42.1777 34.2373C41.2567 34.7066 40.3241 34.8659 39.4717 34.9355C38.6542 35.0023 37.6702 35 36.5996 35H29V40H30.5C31.3284 40 32 40.6716 32 41.5C32 42.3284 31.3284 43 30.5 43H15.5C14.6716 43 14 42.3284 14 41.5C14 40.6716 14.6716 40 15.5 40H17V35H9.40039C8.32979 35 7.34583 35.0023 6.52832 34.9355C5.67592 34.8659 4.74333 34.7066 3.82227 34.2373C2.50514 33.5662 1.43381 32.4949 0.762695 31.1777C0.29345 30.2567 0.134109 29.3241 0.0644531 28.4717C-0.00233922 27.6542 0 26.6702 0 25.5996V9.40039C-1.52855e-08 8.32979 -0.00233986 7.34583 0.0644531 6.52832C0.13411 5.67592 0.293447 4.74334 0.762695 3.82227L0.893555 3.57812C1.56901 2.37273 2.58745 1.39187 3.82227 0.762695L4.16797 0.600586C4.97515 0.254765 5.78248 0.125402 6.52832 0.0644531C7.34583 -0.00233986 8.32979 -1.52856e-08 9.40039 0H36.5996ZM20 40H26V35H20V40ZM7.91602 3.00684C6.61608 3.02728 5.82525 3.10861 5.18359 3.43555C4.43109 3.81902 3.81902 4.43109 3.43555 5.18359C2.99957 6.03924 3 7.16019 3 9.40039V25.5996C3 27.8398 2.99958 28.9608 3.43555 29.8164C3.81901 30.5689 4.43109 31.181 5.18359 31.5645C5.82525 31.8914 6.61608 31.9727 7.91602 31.9932L9.40039 32H36.5996C38.6999 32 39.816 31.9999 40.6523 31.6406L40.8164 31.5645C41.4749 31.2289 42.0259 30.7183 42.4102 30.0918L42.5645 29.8164C43.0004 28.9608 43 27.8398 43 25.5996V9.40039C43 7.30007 42.9999 6.18397 42.6406 5.34766L42.5645 5.18359C42.181 4.43109 41.5689 3.81901 40.8164 3.43555C39.9608 2.99958 38.8398 3 36.5996 3H9.40039L7.91602 3.00684Z" fill="currentColor"/></svg>
-      <span>For Desktops</span>
-      <svg id="chev-desktop-section" class="device-section-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
-    </div>
-    <div class="device-section-body" id="desktop-section">
-      <div class="device-section-inner">
-        <div class="modal-grid desktop-grid">${desktopItemsHtml}</div>
-      </div>
-    </div>
+    </div>${idx < sections.length - 1 ? '\n    <div class="device-section-divider"></div>' : ''}`).join('');
+
+    const sectionIds = sections.map((s) => s.id);
+    itemsHtml = `${sectionsMarkup}
     <script>
     (function() {
       var saved = sessionStorage.getItem('deviceFilter') || 'all';
-      var openId = saved === 'desktop' ? 'desktop-section' : 'phone-section';
+      var sectionIds = ${JSON.stringify(sectionIds)};
+      var openId = sectionIds[0];
+      if (saved === 'desktop' && sectionIds.indexOf('desktop-section') !== -1) openId = 'desktop-section';
+      else if (saved === 'tablet' && sectionIds.indexOf('tablet-section') !== -1) openId = 'tablet-section';
+      else if (sectionIds.indexOf('phone-section') !== -1) openId = 'phone-section';
       var body = document.getElementById(openId);
       var chev = document.getElementById('chev-' + openId);
       if (body) body.classList.add('open');
       if (chev) chev.classList.add('open');
     })();
     </script>`;
-  } else if (desktopImages.length > 0) {
-    itemsHtml = `
-    <div class="device-section-header static">
-      <svg class="device-section-icon" viewBox="0 0 46 43" fill="none" aria-hidden="true"><path d="M36.5996 0C37.6702 0 38.6542 -0.00233906 39.4717 0.0644531C40.2175 0.125401 41.0249 0.254768 41.832 0.600586L42.1777 0.762695L42.4219 0.893555C43.6273 1.569 44.6081 2.58745 45.2373 3.82227C45.7066 4.74333 45.8659 5.67592 45.9355 6.52832C46.0023 7.34583 46 8.32979 46 9.40039V25.5996C46 26.6702 46.0023 27.6542 45.9355 28.4717C45.8659 29.3241 45.7066 30.2567 45.2373 31.1777C44.5662 32.4949 43.4949 33.5662 42.1777 34.2373C41.2567 34.7066 40.3241 34.8659 39.4717 34.9355C38.6542 35.0023 37.6702 35 36.5996 35H29V40H30.5C31.3284 40 32 40.6716 32 41.5C32 42.3284 31.3284 43 30.5 43H15.5C14.6716 43 14 42.3284 14 41.5C14 40.6716 14.6716 40 15.5 40H17V35H9.40039C8.32979 35 7.34583 35.0023 6.52832 34.9355C5.67592 34.8659 4.74333 34.7066 3.82227 34.2373C2.50514 33.5662 1.43381 32.4949 0.762695 31.1777C0.29345 30.2567 0.134109 29.3241 0.0644531 28.4717C-0.00233922 27.6542 0 26.6702 0 25.5996V9.40039C-1.52855e-08 8.32979 -0.00233986 7.34583 0.0644531 6.52832C0.13411 5.67592 0.293447 4.74334 0.762695 3.82227L0.893555 3.57812C1.56901 2.37273 2.58745 1.39187 3.82227 0.762695L4.16797 0.600586C4.97515 0.254765 5.78248 0.125402 6.52832 0.0644531C7.34583 -0.00233986 8.32979 -1.52856e-08 9.40039 0H36.5996ZM20 40H26V35H20V40ZM7.91602 3.00684C6.61608 3.02728 5.82525 3.10861 5.18359 3.43555C4.43109 3.81902 3.81902 4.43109 3.43555 5.18359C2.99957 6.03924 3 7.16019 3 9.40039V25.5996C3 27.8398 2.99958 28.9608 3.43555 29.8164C3.81901 30.5689 4.43109 31.181 5.18359 31.5645C5.82525 31.8914 6.61608 31.9727 7.91602 31.9932L9.40039 32H36.5996C38.6999 32 39.816 31.9999 40.6523 31.6406L40.8164 31.5645C41.4749 31.2289 42.0259 30.7183 42.4102 30.0918L42.5645 29.8164C43.0004 28.9608 43 27.8398 43 25.5996V9.40039C43 7.30007 42.9999 6.18397 42.6406 5.34766L42.5645 5.18359C42.181 4.43109 41.5689 3.81901 40.8164 3.43555C39.9608 2.99958 38.8398 3 36.5996 3H9.40039L7.91602 3.00684Z" fill="currentColor"/></svg>
-      <span>For Desktops</span>
-    </div>
-    <div class="modal-grid desktop-grid">${desktopItemsHtml}</div>`;
-  } else {
-    itemsHtml = `
-    <div class="device-section-header static">
-      <svg class="device-section-icon" viewBox="0 0 28 46" fill="none" aria-hidden="true"><path d="M18.5996 0C19.6702 0 20.6542 -0.00233922 21.4717 0.0644531C22.2175 0.125401 23.0249 0.254767 23.832 0.600586L24.1777 0.762695L24.4219 0.893555C25.6273 1.56901 26.6081 2.58745 27.2373 3.82227C27.7066 4.74334 27.8659 5.67592 27.9355 6.52832C28.0023 7.34583 28 8.32979 28 9.40039V36.5996C28 37.6702 28.0023 38.6542 27.9355 39.4717C27.8659 40.3241 27.7066 41.2567 27.2373 42.1777C26.5662 43.4949 25.4949 44.5662 24.1777 45.2373C23.2567 45.7066 22.3241 45.8659 21.4717 45.9355C20.6542 46.0023 19.6702 46 18.5996 46H9.40039C8.32979 46 7.34583 46.0023 6.52832 45.9355C5.67592 45.8659 4.74333 45.7066 3.82227 45.2373C2.50514 44.5662 1.43381 43.4949 0.762695 42.1777C0.29345 41.2567 0.134109 40.3241 0.0644531 39.4717C-0.00233906 38.6542 0 37.6702 0 36.5996V9.40039C-1.52855e-08 8.32979 -0.00233986 7.34583 0.0644531 6.52832C0.13411 5.67592 0.293447 4.74334 0.762695 3.82227L0.893555 3.57812C1.56901 2.37273 2.58745 1.39187 3.82227 0.762695L4.16797 0.600586C4.97515 0.254765 5.78248 0.125402 6.52832 0.0644531C7.34583 -0.00233986 8.32979 -1.52856e-08 9.40039 0H18.5996ZM7.91602 3.00684C6.61608 3.02728 5.82525 3.10861 5.18359 3.43555C4.43109 3.81902 3.81902 4.43109 3.43555 5.18359C2.99957 6.03924 3 7.16019 3 9.40039V36.5996C3 38.8398 2.99958 39.9608 3.43555 40.8164C3.81901 41.5689 4.43109 42.181 5.18359 42.5645C5.82525 42.8914 6.61608 42.9727 7.91602 42.9932L9.40039 43H18.5996C20.6999 43 21.816 42.9999 22.6523 42.6406L22.8164 42.5645C23.4749 42.2289 24.0259 41.7183 24.4102 41.0918L24.5645 40.8164C25.0004 39.9608 25 38.8398 25 36.5996V9.40039C25 7.30007 24.9999 6.18397 24.6406 5.34766L24.5645 5.18359C24.181 4.43109 23.5689 3.81901 22.8164 3.43555C21.9608 2.99958 20.8398 3 18.5996 3H9.40039L7.91602 3.00684ZM17 40C17.5523 40 18 40.4477 18 41C18 41.5523 17.5523 42 17 42H11C10.4477 42 10 41.5523 10 41C10 40.4477 10.4477 40 11 40H17ZM16.5 5C17.3284 5 18 5.67157 18 6.5C18 7.32843 17.3284 8 16.5 8H11.5C10.6716 8 10 7.32843 10 6.5C10 5.67157 10.6716 5 11.5 5H16.5Z" fill="currentColor"/></svg>
-      <span>For Smartphones</span>
-    </div>
-    <div class="modal-grid">${phoneItemsHtml}</div>`;
   }
 
   const similarItems = getSimilarItems(item, allData, 4);
@@ -237,6 +246,15 @@ function renderCollectionPage(item, slug, allData) {
       </button>
     </div>
     ${itemsHtml}
+    <div class="share-block">
+      <p class="share-heading">Enjoying this collection?</p>
+      <p class="share-text">Consider sharing it with friends. Your support truly helps this free project grow.</p>
+      <button type="button" class="share-btn" id="shareBtn" data-url="${pageUrl}" data-title="${escapeHtml(pageTitle)}">
+        <svg class="share-icon-default" viewBox="0 0 26 40" fill="none" aria-hidden="true"><path d="M19.7002 14.0127C19.9503 14.0202 20.19 14.0324 20.415 14.0508C21.1007 14.1068 21.9095 14.2395 22.7236 14.6543C23.8526 15.2295 24.7705 16.1474 25.3457 17.2764C25.7605 18.0905 25.8932 18.8993 25.9492 19.585C26.0024 20.2357 26 21.0093 26 21.7998V32.2002C26 32.9907 26.0024 33.7643 25.9492 34.415C25.8932 35.1007 25.7605 35.9095 25.3457 36.7236C24.7705 37.8526 23.8526 38.7705 22.7236 39.3457C21.9095 39.7605 21.1007 39.8932 20.415 39.9492C19.7643 40.0024 18.9907 40 18.2002 40H7.7998C7.0093 40 6.23566 40.0024 5.58496 39.9492C4.89929 39.8932 4.09046 39.7605 3.27637 39.3457C2.1474 38.7705 1.22953 37.8526 0.654297 36.7236C0.239527 35.9095 0.106825 35.1007 0.0507812 34.415C-0.00238184 33.7643 -3.84221e-07 32.9907 0 32.2002V21.7998C-4.16796e-07 21.0093 -0.00238302 20.2357 0.0507812 19.585C0.106826 18.8993 0.239521 18.0905 0.654297 17.2764C1.22954 16.1474 2.1474 15.2295 3.27637 14.6543C4.09046 14.2395 4.89929 14.1068 5.58496 14.0508C5.81 14.0324 6.04975 14.0202 6.2998 14.0127C7.12785 13.9879 7.7998 14.6716 7.7998 15.5C7.7998 16.3283 7.1276 16.9852 6.2998 17.0146C5.5485 17.0413 5.05163 17.1162 4.6377 17.3271L4.43164 17.4424C3.96167 17.7306 3.57887 18.1438 3.32715 18.6377L3.26953 18.7607C3.00007 19.3879 3 20.2247 3 21.7998V32.2002L3.00488 33.3125C3.02021 34.2877 3.08191 34.881 3.32715 35.3623C3.61472 35.9265 4.07348 36.3853 4.6377 36.6729C5.2794 36.9998 6.11979 37 7.7998 37H18.2002C19.8802 37 20.7206 36.9998 21.3623 36.6729C21.9265 36.3853 22.3853 35.9265 22.6729 35.3623C22.9181 34.881 22.9798 34.2877 22.9951 33.3125L23 32.2002V21.7998C23 20.2247 22.9999 19.3879 22.7305 18.7607L22.6729 18.6377C22.4211 18.1438 22.0383 17.7306 21.5684 17.4424L21.3623 17.3271C20.9484 17.1162 20.4515 17.0413 19.7002 17.0146C18.8724 16.9852 18.2002 16.3283 18.2002 15.5C18.2002 14.6716 18.8721 13.9879 19.7002 14.0127ZM11.9854 0.439453C12.5711 -0.146314 13.5207 -0.146277 14.1064 0.439453L23.6523 9.98535C24.2381 10.5711 24.2381 11.5207 23.6523 12.1064C23.0666 12.6922 22.117 12.6922 21.5312 12.1064L14.5459 5.12109V25C14.5459 25.8284 13.8743 26.5 13.0459 26.5C12.2175 26.4999 11.5459 25.8284 11.5459 25V5.12109L4.56055 12.1064C3.97476 12.6922 3.02522 12.6922 2.43945 12.1064C1.85374 11.5207 1.85374 10.5711 2.43945 9.98535L11.9854 0.439453Z" fill="currentColor"/></svg>
+        <svg class="share-icon-copied" viewBox="0 0 34 34" fill="none" aria-hidden="true"><path d="M17 0C26.3888 0 34 7.61116 34 17C34 26.3888 26.3888 34 17 34C7.61116 34 0 26.3888 0 17C0 7.61116 7.61116 0 17 0ZM17 3C9.26801 3 3 9.26801 3 17C3 24.732 9.26801 31 17 31C24.732 31 31 24.732 31 17C31 9.26801 24.732 3 17 3ZM24.3252 11.4248C24.911 10.8391 25.8605 10.8391 26.4463 11.4248C27.0319 12.0106 27.0319 12.9602 26.4463 13.5459L16.5469 23.4453C16.5103 23.4819 16.4718 23.5159 16.4326 23.5479C15.8435 24.0284 14.974 23.9945 14.4248 23.4453L8.06152 17.0811C7.47585 16.4953 7.47577 15.5457 8.06152 14.96C8.64729 14.3744 9.59689 14.3744 10.1826 14.96L15.4863 20.2637L24.3252 11.4248Z" fill="currentColor"/></svg>
+        <span class="share-btn-label">Share</span>
+      </button>
+    </div>
     ${similarHtml ? `
     <h2 class="similar-heading">Similar Collections</h2>
     <div class="wallpaper-grid similar-grid">${similarHtml}
@@ -308,7 +326,11 @@ function generateSitemap(items) {
 }
 
 function generateFeed(items) {
-  const sorted = [...items].sort((a, b) => parseDateSafe(b.date) - parseDateSafe(a.date));
+  const sorted = [...items].sort((a, b) => {
+    const dateDiff = parseDateSafe(b.date) - parseDateSafe(a.date);
+    if (dateDiff !== 0) return dateDiff;
+    return getSortPriority(a.title) - getSortPriority(b.title);
+  });
 
   const itemBlocks = sorted.map((item) => {
     const slug = slugify(item.title);
@@ -345,17 +367,17 @@ function renderHomepageCard(item) {
   const firstImage = (item.images && item.images[0]) ? resolveUrl(getImageSrc(item.images[0])) : '';
   const imageCount = (item.images || []).length;
   const titleEsc = escapeHtml(item.title);
+  const blurSrc = escapeHtml(optimizedUrl(firstImage, 24));
+  const fullSrc = escapeHtml(optimizedUrl(firstImage, 750));
   return `
         <a href="collections/${slug}.html" class="wallpaper-card">
           <div class="card-media-wrapper">
-            <img src="${escapeHtml(optimizedUrl(firstImage, 24))}" class="card-preview-blur" aria-hidden="true">
-            <img src="${escapeHtml(optimizedUrl(firstImage, 750))}" class="card-preview-img loaded" decoding="async" fetchpriority="high" alt="${titleEsc} wallpaper preview">
+            <img src="${blurSrc}" class="card-preview-blur" aria-hidden="true">
+            <img src="${fullSrc}" class="card-preview-img loaded" decoding="async" fetchpriority="high" alt="${titleEsc} wallpaper preview">
             <span class="badge">${escapeHtml(brandLabel)}</span>
             <span class="count-badge">${COUNT_ICON_SVG}${imageCount}</span>
           </div>
-          <div class="card-info">
-            <h3 class="card-title">${titleEsc}</h3>
-          </div>
+          <h3 class="card-title">${titleEsc}</h3>
         </a>`;
 }
 
@@ -363,7 +385,11 @@ function generateHomepage(data) {
   const templatePath = path.join(__dirname, '..', 'index.template.html');
   const template = fs.readFileSync(templatePath, 'utf8');
 
-  const sorted = [...data].sort((a, b) => parseDateSafe(b.date) - parseDateSafe(a.date));
+  const sorted = [...data].sort((a, b) => {
+    const dateDiff = parseDateSafe(b.date) - parseDateSafe(a.date);
+    if (dateDiff !== 0) return dateDiff;
+    return getSortPriority(a.title) - getSortPriority(b.title);
+  });
   const priorityCards = sorted.slice(0, 4).map(renderHomepageCard).join('');
 
   const html = template.replace('<!--HOMEPAGE_CARDS-->', priorityCards);
