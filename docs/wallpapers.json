@@ -3842,5 +3842,1335 @@
         ]
       }
     ]
+  },
+  {
+    "title": "iPhone 7",
+    "brand": "apple",
+    "date": "September 7, 2016",
+    "images": [
+      {
+        "src": "iphone7/1.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "iphone7/2.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "iphone7/3.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "iphone7/4.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "iphone7/5.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "iphone7/6.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "iphone7/7.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "iphone7/8.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "iphone7/9.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "iphone7/10.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "iphone7/11.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "iphone7/12.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "iphone7/13.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "iphone7/14.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "iphone7/15.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "iphone7/16.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "iphone7/17.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "iphone7/18.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "iphone7/19.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "iphone7/20.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "iphone7/21.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "iphone7/22.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "iphone7/23.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "iphone7/24.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      }
+    ],
+    "description": "Unveiled on September 7, 2016, the iPhone 7 dropped the headphone jack in favor of Lightning-based audio and introduced the first water-resistant iPhone design. It came with a faster A10 Fusion chip and, on the Plus model, Apple's first dual-camera system."
+  },
+  {
+    "title": "iOS 8",
+    "brand": "apple",
+    "date": "June 2, 2014",
+    "images": [
+      {
+        "src": "ios8/1.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios8/2.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios8/3.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios8/4.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios8/5.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios8/6.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios8/7.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios8/8.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios8/9.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios8/10.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios8/11.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios8/12.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "ios8/13.png",
+        "devices": [
+          "phone"
+        ]
+      }
+    ],
+    "description": "Announced at WWDC on June 2, 2014, iOS 8 introduced widgets, the Health app, and Continuity features that let iPhones and Macs work together seamlessly. It also opened up third-party keyboards on iOS for the first time."
+  },
+  {
+    "title": "Samsung Galaxy S9",
+    "brand": "samsung",
+    "date": "February 25, 2018",
+    "images": [
+      {
+        "src": "galaxys9/1.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "galaxys9/2.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "galaxys9/3.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "galaxys9/4.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "galaxys9/5.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "galaxys9/6.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "galaxys9/7.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "galaxys9/8.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "galaxys9/9.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "galaxys9/10.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "galaxys9/11.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "galaxys9/12.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "galaxys9/13.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "galaxys9/14.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "galaxys9/15.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      }
+    ],
+    "description": "Unveiled on February 25, 2018, the Galaxy S9 refined the S8's Infinity Display with a redesigned dual-aperture camera and stereo speakers tuned by AKG. It was among the first Samsung flagships to support super slow-motion video recording."
+  },
+  {
+    "title": "Samsung Galaxy S10",
+    "brand": "samsung",
+    "date": "February 20, 2019",
+    "images": [
+      {
+        "src": "galaxys10/1.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "galaxys10/2.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "galaxys10/3.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "galaxys10/4.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "galaxys10/5.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "galaxys10/6.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "galaxys10/7.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "galaxys10/8.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "galaxys10/9.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "galaxys10/10.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "galaxys10/11.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "galaxys10/12.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      }
+    ],
+    "description": "Announced on February 20, 2019, the Galaxy S10 marked Samsung's tenth-anniversary flagship, introducing a punch-hole selfie camera and an ultrasonic in-display fingerprint sensor. It shipped with a triple rear camera system, including Samsung's first ultra-wide lens."
+  },
+  {
+    "title": "Samsung Galaxy S10 5G",
+    "brand": "samsung",
+    "date": "February 20, 2019",
+    "images": [
+      {
+        "src": "galaxys105g/1.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "galaxys105g/2.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "galaxys105g/3.png",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      }
+    ],
+    "description": "Launched alongside the standard S10 lineup on February 20, 2019, the Galaxy S10 5G was Samsung's first 5G-ready smartphone. It featured a larger 6.7-inch display, a fourth rear camera with a 3D depth sensor, and a bigger battery to match its flagship ambitions."
+  },
+  {
+    "title": "Samsung Galaxy Note 10",
+    "brand": "samsung",
+    "date": "August 7, 2019",
+    "images": [
+      {
+        "src": "galaxynote10/1.jpg",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "galaxynote10/2.jpg",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "galaxynote10/3.jpg",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "galaxynote10/4.jpg",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "galaxynote10/5.jpg",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      },
+      {
+        "src": "galaxynote10/6.jpg",
+        "devices": [
+          "phone",
+          "tablet",
+          "desktop"
+        ]
+      }
+    ],
+    "description": "Announced on August 7, 2019, the Galaxy Note 10 slimmed down Samsung's phablet line with a smaller footprint and a centered punch-hole camera. It debuted an upgraded S Pen with air gesture controls, letting users control the camera and other apps remotely."
+  },
+  {
+    "title": "Samsung Galaxy Note 20",
+    "brand": "samsung",
+    "date": "August 5, 2020",
+    "images": [
+      {
+        "src": "galaxynote20/1.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "galaxynote20/2.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "galaxynote20/3.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "galaxynote20/4.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "galaxynote20/5.png",
+        "devices": [
+          "phone"
+        ]
+      }
+    ],
+    "description": "Unveiled on August 5, 2020, the Galaxy Note 20 paired a flat display with a more affordable price point than its Ultra sibling. It featured an improved S Pen with reduced latency and tighter integration with Microsoft's productivity apps."
+  },
+  {
+    "title": "Oppo R17 Pro",
+    "brand": "oppo",
+    "date": "August 23, 2018",
+    "images": [
+      {
+        "src": "oppor17pro/1.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "oppor17pro/2.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "oppor17pro/3.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "oppor17pro/4.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "oppor17pro/5.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "oppor17pro/6.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "oppor17pro/7.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "oppor17pro/8.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "oppor17pro/9.png",
+        "devices": [
+          "phone"
+        ]
+      }
+    ],
+    "description": "Launched on August 23, 2018, the Oppo R17 Pro introduced a teardrop notch design and a variable aperture camera that could switch between f/1.5 and f/2.4. It also featured Oppo's SuperVOOC fast charging, capable of powering the phone from empty to 40% in just ten minutes."
+  },
+  {
+    "title": "Oppo Find X2",
+    "brand": "oppo",
+    "date": "March 6, 2020",
+    "images": [
+      {
+        "src": "oppofindx2/1.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "oppofindx2/2.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "oppofindx2/3.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "oppofindx2/4.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "oppofindx2/5.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "oppofindx2/6.jpg",
+        "devices": [
+          "phone"
+        ]
+      }
+    ],
+    "description": "Announced on March 6, 2020, the Oppo Find X2 was one of the first phones to pair a 120Hz refresh rate with a QHD+ resolution display. It ran on the Snapdragon 865 chipset and supported 65W SuperVOOC 2.0 fast charging, able to fully charge the battery in under 40 minutes."
+  },
+  {
+    "title": "Sony Xperia 1",
+    "brand": "sony",
+    "date": "February 25, 2019",
+    "images": [
+      {
+        "src": "sonyxperia1/1.jpg",
+        "devices": [
+          "phone",
+          "tablet"
+        ]
+      },
+      {
+        "src": "sonyxperia1/2.jpg",
+        "devices": [
+          "phone",
+          "tablet"
+        ]
+      },
+      {
+        "src": "sonyxperia1/3.jpg",
+        "devices": [
+          "phone",
+          "tablet"
+        ]
+      },
+      {
+        "src": "sonyxperia1/4.jpg",
+        "devices": [
+          "phone",
+          "tablet"
+        ]
+      }
+    ],
+    "description": "Unveiled on February 25, 2019, the Sony Xperia 1 introduced a tall 21:9 4K OLED display designed for cinematic viewing, drawing on Sony's expertise in professional displays. It featured a triple-camera system co-engineered with Sony's Alpha camera division, including real-time eye autofocus."
+  },
+  {
+    "title": "MIUI 12",
+    "brand": "xiaomi",
+    "date": "April 27, 2020",
+    "images": [
+      {
+        "src": "miui12/1.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "miui12/2.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "miui12/3.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "miui12/4.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "miui12/5.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "miui12/6.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "miui12/7.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "miui12/8.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "miui12/9.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "miui12/10.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "miui12/11.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "miui12/12.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "miui12/13.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "miui12/14.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "miui12/15.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "miui12/16.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "miui12/17.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "miui12/18.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "miui12/19.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "miui12/20.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "miui12/21.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "miui12/22.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "miui12/23.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "miui12/24.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "miui12/25.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "miui12/26.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "miui12/27.webp",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "miui12/28.webp",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "miui12/29.webp",
+        "devices": [
+          "phone"
+        ]
+      }
+    ],
+    "description": "Released on April 27, 2020, MIUI 12 brought a redesigned Control Center, a private Photon animation engine, and a new Super Wallpaper feature simulating dynamic views of Earth and Mars. It also introduced deeper privacy controls, including a permission-tracking dashboard for apps."
+  },
+  {
+    "title": "OnePlus Nord",
+    "brand": "oneplus",
+    "date": "July 21, 2020",
+    "images": [
+      {
+        "src": "oneplusnord/1.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "oneplusnord/2.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "oneplusnord/3.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "oneplusnord/4.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "oneplusnord/5.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "oneplusnord/6.jpg",
+        "devices": [
+          "phone"
+        ]
+      }
+    ],
+    "description": "Launched on July 21, 2020, the OnePlus Nord marked the company's return to the mid-range segment years after retiring its early budget-friendly models. It paired the Snapdragon 765G chipset with a 90Hz display and a quad rear camera, aiming to bring OnePlus's flagship feel to a lower price."
+  },
+  {
+    "title": "Pixel 4a",
+    "brand": "google",
+    "date": "August 3, 2020",
+    "images": [
+      {
+        "src": "pixel4a/1.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "pixel4a/2.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "pixel4a/3.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "pixel4a/4.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "pixel4a/5.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "pixel4a/6.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "pixel4a/7.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "pixel4a/8.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "pixel4a/9.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "pixel4a/10.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "pixel4a/11.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "pixel4a/12.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "pixel4a/13.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "pixel4a/14.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "pixel4a/15.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "pixel4a/16.jpg",
+        "devices": [
+          "phone"
+        ]
+      }
+    ],
+    "description": "Announced on August 3, 2020, the Pixel 4a brought Google's acclaimed computational photography to a budget price point. It kept the same 12.2MP rear camera found in the pricier Pixel 4, paired with a compact design and a punch-hole selfie camera."
+  },
+  {
+    "title": "Asus ZenFone 4 Max",
+    "brand": "asus",
+    "date": "July 4, 2017",
+    "images": [
+      {
+        "src": "asuszenfone4max/1.png",
+        "devices": [
+          "phone",
+          "tablet"
+        ]
+      },
+      {
+        "src": "asuszenfone4max/2.png",
+        "devices": [
+          "phone",
+          "tablet"
+        ]
+      },
+      {
+        "src": "asuszenfone4max/3.png",
+        "devices": [
+          "phone",
+          "tablet"
+        ]
+      }
+    ],
+    "description": "Launched on July 4, 2017, the Asus ZenFone 4 Max was built around a massive 5,000mAh battery, promising up to 46 days of standby time. It also featured a dual rear camera setup with a wide-angle lens, letting users capture more of a scene without stepping back."
+  },
+  {
+    "title": "Asus ZenFone 4 Selfie Pro",
+    "brand": "asus",
+    "date": "August 17, 2017",
+    "images": [
+      {
+        "src": "asuszenfone4selfiepro/1.png",
+        "devices": [
+          "phone",
+          "tablet"
+        ]
+      },
+      {
+        "src": "asuszenfone4selfiepro/2.png",
+        "devices": [
+          "phone",
+          "tablet"
+        ]
+      },
+      {
+        "src": "asuszenfone4selfiepro/3.png",
+        "devices": [
+          "phone",
+          "tablet"
+        ]
+      },
+      {
+        "src": "asuszenfone4selfiepro/4.png",
+        "devices": [
+          "phone",
+          "tablet"
+        ]
+      },
+      {
+        "src": "asuszenfone4selfiepro/5.png",
+        "devices": [
+          "phone",
+          "tablet"
+        ]
+      },
+      {
+        "src": "asuszenfone4selfiepro/6.png",
+        "devices": [
+          "phone",
+          "tablet"
+        ]
+      },
+      {
+        "src": "asuszenfone4selfiepro/7.png",
+        "devices": [
+          "phone",
+          "tablet"
+        ]
+      }
+    ],
+    "description": "Unveiled on August 17, 2017, the Asus ZenFone 4 Selfie Pro focused on front-facing photography with a dual selfie camera system, including a wide-angle lens for group shots. It also included a dedicated LED flash on the front to improve low-light selfies."
+  },
+  {
+    "title": "Asus ZenFone 6",
+    "brand": "asus",
+    "date": "May 16, 2019",
+    "images": [
+      {
+        "src": "asuszenfone6/1.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "asuszenfone6/2.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "asuszenfone6/3.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "asuszenfone6/4.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "asuszenfone6/5.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "asuszenfone6/6.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "asuszenfone6/7.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "asuszenfone6/8.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "asuszenfone6/9.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "asuszenfone6/10.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "asuszenfone6/11.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "asuszenfone6/12.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "asuszenfone6/13.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "asuszenfone6/14.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "asuszenfone6/15.jpg",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "asuszenfone6/16.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "asuszenfone6/17.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "asuszenfone6/18.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "asuszenfone6/19.png",
+        "devices": [
+          "phone"
+        ]
+      },
+      {
+        "src": "asuszenfone6/20.png",
+        "devices": [
+          "phone"
+        ]
+      }
+    ],
+    "description": "Announced on May 16, 2019, the Asus ZenFone 6 (also known as the ZenFone 6z) featured a distinctive flip-up camera module, letting the same dual-camera system serve as both the rear and selfie cameras. This allowed for a completely notch-free, bezel-minimal display."
   }
 ]
