@@ -131,22 +131,6 @@ body {
     margin-bottom: 32px;
 }
 
-.btn.donate-btn {
-    background: var(--accent);
-    color: var(--text-accent-btn);
-}
-
-@media (hover: hover) {
-    .btn.donate-btn:hover {
-        transform: scale(1.01);
-        box-shadow: 0 0 10px rgba(var(--accent-rgb), 0.45);
-    }
-}
-
-.btn.donate-btn:active {
-    transform: scale(0.97);
-}
-
 .load-more-btn {
 }
 
@@ -1211,17 +1195,6 @@ body {
     line-height: 1.5;
 }
 
-.about-support-card {
-    width: 100%;
-    margin-top: 24px;
-    padding: 24px 20px;
-    background-color: rgba(var(--accent-rgb), 0.15);
-    border-radius: var(--radius-base);
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-}
-
 .site-footer {
     width: 100%;
     max-width: 480px;
@@ -1241,12 +1214,6 @@ body {
     align-items: center;
     text-align: center;
     gap: 16px;
-}
-
-.support-card-title {
-    font-size: var(--fs-base);
-    font-weight: 700;
-    color: var(--text-primary);
 }
 
 .footer-text {
@@ -1361,12 +1328,6 @@ body {
     --text-accent-btn: #f5f5f5;
   }
 
-@media (hover: hover) {
-    .btn.donate-btn:hover {
-        box-shadow: 0 0 10px rgba(var(--accent-rgb), 0.75);
-    }
-}
-
     .walls-title {
         text-shadow:
           0 0px 0 rgba(255, 255, 255, 0.5),
@@ -1403,10 +1364,6 @@ body {
 
     .card-media-wrapper {
         background: rgba(255, 255, 255, 0.05);
-    }
-
-    .about-support-card {
-        background-color: rgba(var(--accent-rgb), 0.25);
     }
 }
 @media (hover: none) and (pointer: coarse) {
